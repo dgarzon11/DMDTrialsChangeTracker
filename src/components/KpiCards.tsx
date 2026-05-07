@@ -379,6 +379,7 @@ function SvgDonut({
   size?: number; inner?: number; outer?: number;
 }) {
   const [hovered, setHovered] = useState<string | null>(null);
+  const [mousePos, setMousePos] = useState<{ x: number; y: number } | null>(null);
   const cx = size / 2, cy = size / 2;
   const total = segments.reduce((s, d) => s + d.value, 0);
   if (total === 0) return null;
@@ -418,16 +419,26 @@ function SvgDonut({
             fill={arc.color}
             opacity={hovered && hovered !== arc.name ? 0.5 : 1}
             style={{ cursor: "pointer", transition: "opacity 0.15s" }}
-            onMouseEnter={() => setHovered(arc.name)}
-            onMouseLeave={() => setHovered(null)}
+            onMouseEnter={(e) => {
+              setHovered(arc.name);
+              setMousePos({ x: e.clientX, y: e.clientY });
+            }}
+            onMouseMove={(e) => setMousePos({ x: e.clientX, y: e.clientY })}
+            onMouseLeave={() => { setHovered(null); setMousePos(null); }}
           />
         ))}
       </svg>
-      {/* Hover tooltip */}
-      {hovSeg && (
+      {/* Hover tooltip — fixed positioning so it never gets clipped */}
+      {hovSeg && mousePos && (
         <div
-          className="absolute left-full top-0 ml-2 z-50 bg-[#0B3D52] text-white border border-[#1B6B8A]/40 rounded-xl px-3 py-2.5 text-xs shadow-lg pointer-events-none"
-          style={{ minWidth: 150 }}
+          className="bg-[#0B3D52] text-white border border-[#1B6B8A]/40 rounded-xl px-3 py-2.5 text-xs shadow-lg pointer-events-none"
+          style={{
+            position: "fixed",
+            left: Math.min(mousePos.x + 14, window.innerWidth - 220),
+            top: Math.min(mousePos.y + 14, window.innerHeight - 140),
+            minWidth: 150,
+            zIndex: 9999,
+          }}
         >
           <div className="flex items-center gap-1.5 mb-1.5">
             <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: hovSeg.color }} />
@@ -460,8 +471,8 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
     .filter((d) => d.value > 0);
 
   return (
-    <div className="bg-white rounded-2xl p-4 border border-[#DDE8EC] shadow-card hover:shadow-card-hover transition-shadow relative overflow-visible flex flex-col">
-      <div className="absolute top-0 left-0 h-1 w-full rounded-t-2xl" style={{ background: "#0B3D52" }} />
+    <div className="bg-white rounded-2xl p-4 border border-[#DDE8EC] shadow-card hover:shadow-card-hover transition-shadow relative overflow-hidden flex flex-col">
+      <div className="absolute top-0 left-0 h-1 w-full" style={{ background: "#0B3D52" }} />
       <div className="flex items-center justify-between">
         <p className="text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">Total Trials</p>
         <button
