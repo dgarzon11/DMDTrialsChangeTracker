@@ -12,10 +12,32 @@ export interface Change {
 export interface Study {
   NCTId: string;
   BriefTitle: string;
+  Acronym: string;
   OverallStatus: string;
+  BriefSummary: string;
+  HasResults: string;
+  Condition: string;
+  InterventionType: string;
+  InterventionName: string;
+  PrimaryOutcomeMeasure: string;
+  SecondaryOutcomeMeasure: string;
   LeadSponsorName: string;
-  EnrollmentCount: string;
+  LeadSponsorClass: string;
+  CollaboratorName: string;
+  Sex: string;
+  MinimumAge: string;
+  MaximumAge: string;
+  StdAge: string;
   Phase: string;
+  EnrollmentCount: string;
+  StudyType: string;
+  DesignPrimaryPurpose: string;
+  OrgStudyId: string;
+  StartDate: string;
+  PrimaryCompletionDate: string;
+  CompletionDate: string;
+  StudyFirstPostDate: string;
+  LastUpdatePostDate: string;
   Timestamp: string;
 }
 
@@ -29,7 +51,15 @@ export interface EnrichedChange extends Change {
   isNewStudy: boolean;
 }
 
-// Semantic grouping of trial statuses (used for status-change badges)
+// Fields to exclude from all visualizations
+export const EXCLUDED_FIELDS = new Set([
+  "Last Update Post Date",
+  "Secondary Id",
+  "Minimum Age Months",  // derived from Minimum Age — duplicate change
+  "Maximum Age Months",  // derived from Maximum Age — duplicate change
+]);
+
+// Semantic grouping of trial statuses
 export const STATUS_GROUPS: Record<string, string> = {
   "Not Yet Recruiting": "Planned",
   "Recruiting": "Active",
@@ -46,13 +76,13 @@ export const STATUS_GROUPS: Record<string, string> = {
 };
 
 export const STATUS_GROUP_COLORS: Record<string, string> = {
-  Planned: "#0B3D52",
-  Active: "#1E7FA0",
-  Closed: "#89BDD0",
-  Unknown: "#C5DCE4",
+  Planned: "#1E7FA8",
+  Active: "#2A9D60",
+  Closed: "#6B8FA0",
+  Unknown: "#8B9EAB",
 };
 
-// Color per field-changed category (used in stacked bar + row accents)
+// Color per field-changed category
 export const FIELD_COLORS: Record<string, string> = {
   "Overall Status":           "#0B3D52",
   "Enrollment Count":         "#1E7FA0",
@@ -62,7 +92,6 @@ export const FIELD_COLORS: Record<string, string> = {
   "Completion Date":          "#A8CBD6",
   "Primary Completion Date":  "#B8D5DE",
   "Lead Sponsor Name":        "#5E8C9C",
-  "Last Update Post Date":    "#C8DDE3",
   "New  Study  Added":        "#3A9B6C",
   "Collaborator Name":        "#7A9EAE",
   "Brief Title":              "#D5E3E8",
@@ -72,6 +101,11 @@ export const FIELD_COLORS: Record<string, string> = {
   "Minimum Age Months":       "#B5CFD8",
   "Maximum Age Months":       "#A2C1CC",
   "Org Study Id":             "#8FA9B3",
+  "Start Date":               "#6B9EAD",
+  "Minimum Age":              "#C2D8DF",
+  "Maximum Age":              "#BDD5DC",
+  "Std Age":                  "#D0E0E5",
+  "Phase":                    "#A0C0CB",
 };
 
 export function fieldColor(field: string): string {
@@ -92,7 +126,14 @@ export function fmtMonthShort(monthKey: string): string {
   if (!monthKey) return "";
   const [y, m] = monthKey.split("-");
   const d = new Date(Number(y), Number(m) - 1, 1);
-  return d.toLocaleString("en-US", { month: "short", year: "2-digit" });
+  return d.toLocaleString("en-US", { month: "short", year: "numeric" });
+}
+
+export function fmtMonthFull(monthKey: string): string {
+  if (!monthKey) return "";
+  const [y, m] = monthKey.split("-");
+  const d = new Date(Number(y), Number(m) - 1, 1);
+  return d.toLocaleString("en-US", { month: "long", year: "numeric" });
 }
 
 async function parseCsv<T>(url: string): Promise<T[]> {
@@ -117,25 +158,30 @@ export async function loadStudies(): Promise<Study[]> {
 }
 
 export function enrich(changes: Change[], sponsorMap: Record<string, string>): EnrichedChange[] {
-  return changes.map((c) => {
-    const monthKey = c.final_date?.slice(0, 7) || "";
-    const field = (c.field_changed || "").trim();
-    const startNum = Number(c.start_value);
-    const finalNum = Number(c.final_value);
-    const delta =
-      field === "Enrollment Count" && !Number.isNaN(startNum) && !Number.isNaN(finalNum)
-        ? finalNum - startNum
-        : undefined;
+  return changes
+    .filter((c) => {
+      const f = (c.field_changed || "").trim();
+      return !EXCLUDED_FIELDS.has(f);
+    })
+    .map((c) => {
+      const monthKey = c.final_date?.slice(0, 7) || "";
+      const field = (c.field_changed || "").trim();
+      const startNum = Number(c.start_value);
+      const finalNum = Number(c.final_value);
+      const delta =
+        field === "Enrollment Count" && !Number.isNaN(startNum) && !Number.isNaN(finalNum)
+          ? finalNum - startNum
+          : undefined;
 
-    return {
-      ...c,
-      field,
-      sponsor: sponsorMap[c.NCTId] || "—",
-      monthKey,
-      monthLabel: fmtMonth(monthKey, "long"),
-      monthShort: fmtMonthShort(monthKey),
-      delta,
-      isNewStudy: field === "New  Study  Added" || field === "New Study Added",
-    };
-  });
+      return {
+        ...c,
+        field,
+        sponsor: sponsorMap[c.NCTId] || "—",
+        monthKey,
+        monthLabel: fmtMonth(monthKey, "long"),
+        monthShort: fmtMonthShort(monthKey),
+        delta,
+        isNewStudy: field === "New  Study  Added" || field === "New Study Added",
+      };
+    });
 }

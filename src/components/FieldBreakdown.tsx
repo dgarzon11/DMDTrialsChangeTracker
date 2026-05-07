@@ -2,7 +2,18 @@
 
 import { motion } from "framer-motion";
 import { useMemo } from "react";
-import { EnrichedChange, fieldColor } from "@/lib/data";
+import { EnrichedChange } from "@/lib/data";
+
+/** Interpolates between light (#A8CEDB) and dark (#0B3D52) based on ratio 0–1 */
+function countColor(ratio: number): string {
+  const t = 0.18 + 0.82 * ratio; // floor at 0.18 so lightest bar is still visible
+  const light = [168, 206, 219]; // #A8CEDB
+  const dark  = [11,  61,  82];  // #0B3D52
+  const r = Math.round(light[0] + (dark[0] - light[0]) * t);
+  const g = Math.round(light[1] + (dark[1] - light[1]) * t);
+  const b = Math.round(light[2] + (dark[2] - light[2]) * t);
+  return `rgb(${r},${g},${b})`;
+}
 
 interface Props {
   changes: EnrichedChange[];
@@ -28,7 +39,7 @@ export default function FieldBreakdown({ changes, selectedField, onSelectField }
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.15 }}
-      className="bg-white rounded-2xl p-5 border border-[#DDE8EC] shadow-[0_1px_2px_rgba(11,61,82,0.04)] h-full"
+      className="bg-white rounded-2xl p-5 border border-[#DDE8EC] shadow-[0_1px_2px_rgba(11,61,82,0.04)] flex flex-col h-full"
     >
       <div className="flex items-baseline justify-between mb-4">
         <div>
@@ -45,7 +56,7 @@ export default function FieldBreakdown({ changes, selectedField, onSelectField }
         )}
       </div>
 
-      <div className="space-y-1.5 max-h-[320px] overflow-y-auto scrollbar-thin pr-1">
+      <div className="space-y-1.5 flex-1 overflow-y-auto min-h-0 pr-1">
         {rows.map(({ field, count }) => {
           const isActive = selectedField === field;
           const dimmed = selectedField !== "all" && !isActive;
@@ -69,7 +80,7 @@ export default function FieldBreakdown({ changes, selectedField, onSelectField }
               <div className="h-2 bg-[#F2F6F8] rounded-full overflow-hidden">
                 <motion.div
                   className="h-full rounded-full"
-                  style={{ background: fieldColor(field) }}
+                  style={{ background: countColor(count / max) }}
                   initial={{ width: 0 }}
                   animate={{ width: `${(count / max) * 100}%` }}
                   transition={{ duration: 0.6, ease: "easeOut" }}

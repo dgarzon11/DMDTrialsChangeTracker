@@ -6,15 +6,36 @@ import {
 } from "@/lib/data";
 import Header, { TimeRange } from "./Header";
 import KpiCards from "./KpiCards";
-import MonthlyChart from "./MonthlyChart";
 import FieldBreakdown from "./FieldBreakdown";
 import ChangesTable from "./ChangesTable";
+import StudyProfileModal from "./StudyProfileModal";
 
 function monthsForRange(range: TimeRange, allMonths: string[]): string[] {
   if (range === "all" || allMonths.length === 0) return allMonths;
   const map: Record<TimeRange, number> = { all: 999, "1m": 1, "3m": 3, "6m": 6, "1y": 12 };
-  const n = map[range];
-  return allMonths.slice(-n);
+  return allMonths.slice(-map[range]);
+}
+
+export interface Comparison {
+  // % change (last month vs month before), always fixed regardless of filter
+  changesPct: number | null;
+  trialsPct: number | null;
+  newStudiesPct: number | null;
+  // absolute counts for tooltip
+  changesCurrentMonth: number;
+  changesPrevMonth: number;
+  trialsCurrentMonth: number;
+  trialsPrevMonth: number;
+  newStudiesCurrentMonth: number;
+  newStudiesPrevMonth: number;
+  // month labels for tooltip
+  currentMonthLabel: string;
+  prevMonthLabel: string;
+}
+
+function pct(current: number, prev: number): number | null {
+  if (prev === 0) return null;
+  return Math.round(((current - prev) / prev) * 100);
 }
 
 export default function Dashboard() {
@@ -23,6 +44,7 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
   const [timeRange, setTimeRange] = useState<TimeRange>("all");
   const [selectedField, setSelectedField] = useState<string>("all");
+  const [profileStudyId, setProfileStudyId] = useState<string | null>(null);
 
   useEffect(() => {
     Promise.all([loadChanges(), loadStudies()]).then(([rawChanges, loadedStudies]) => {
@@ -39,29 +61,71 @@ export default function Dashboard() {
     [changes]
   );
 
-  const activeMonths = useMemo(() => new Set(monthsForRange(timeRange, allMonths)), [timeRange, allMonths]);
+  const activeMonths = useMemo(
+    () => new Set(monthsForRange(timeRange, allMonths)),
+    [timeRange, allMonths]
+  );
 
-  const filtered = useMemo(() => {
-    return changes.filter((c) => {
-      if (!activeMonths.has(c.monthKey)) return false;
-      if (selectedField !== "all" && c.field !== selectedField) return false;
-      return true;
-    });
-  }, [changes, activeMonths, selectedField]);
+  // Always: last month vs month before last — independent of any filter
+  const lastMonth = allMonths[allMonths.length - 1] ?? "";
+  const prevMonth = allMonths[allMonths.length - 2] ?? "";
 
-  // Changes restricted to time-range only (independent of field filter) → for charts
-  const rangeChanges = useMemo(() => {
-    return changes.filter((c) => activeMonths.has(c.monthKey));
-  }, [changes, activeMonths]);
+  const filtered = useMemo(
+    () => changes.filter((c) =>
+      activeMonths.has(c.monthKey) &&
+      (selectedField === "all" || c.field === selectedField)
+    ),
+    [changes, activeMonths, selectedField]
+  );
 
-  // Status group counts from current studies.csv snapshot
-  const statusGroupCounts = useMemo(() => {
+  const rangeChanges = useMemo(
+    () => changes.filter((c) => activeMonths.has(c.monthKey)),
+    [changes, activeMonths]
+  );
+
+  // Fixed comparison: last month vs month before — never affected by filters
+  const comparison = useMemo((): Comparison => {
+    const cur = changes.filter((c) => c.monthKey === lastMonth);
+    const prv = changes.filter((c) => c.monthKey === prevMonth);
+
+    const changesCurrentMonth = cur.length;
+    const changesPrevMonth = prv.length;
+    const trialsCurrentMonth = new Set(cur.map((c) => c.NCTId)).size;
+    const trialsPrevMonth = new Set(prv.map((c) => c.NCTId)).size;
+    const newStudiesCurrentMonth = cur.filter((c) => c.isNewStudy).length;
+    const newStudiesPrevMonth = prv.filter((c) => c.isNewStudy).length;
+
+    return {
+      changesPct: pct(changesCurrentMonth, changesPrevMonth),
+      trialsPct: pct(trialsCurrentMonth, trialsPrevMonth),
+      newStudiesPct: pct(newStudiesCurrentMonth, newStudiesPrevMonth),
+      changesCurrentMonth,
+      changesPrevMonth,
+      trialsCurrentMonth,
+      trialsPrevMonth,
+      newStudiesCurrentMonth,
+      newStudiesPrevMonth,
+      currentMonthLabel: fmtMonth(lastMonth),
+      prevMonthLabel: fmtMonth(prevMonth),
+    };
+  }, [changes, lastMonth, prevMonth]);
+
+  // Status group counts + breakdown details for donut tooltip
+  const { statusGroupCounts, statusGroupDetails } = useMemo(() => {
     const counts: Record<string, number> = { Active: 0, Planned: 0, Closed: 0, Unknown: 0 };
+    const detailsSet: Record<string, Set<string>> = {
+      Active: new Set(), Planned: new Set(), Closed: new Set(), Unknown: new Set(),
+    };
     studies.forEach((s) => {
       const g = STATUS_GROUPS[s.OverallStatus] ?? "Unknown";
       counts[g]++;
+      detailsSet[g]?.add(s.OverallStatus);
     });
-    return counts;
+    const details: Record<string, string[]> = {};
+    Object.entries(detailsSet).forEach(([g, set]) => {
+      details[g] = [...set].sort();
+    });
+    return { statusGroupCounts: counts, statusGroupDetails: details };
   }, [studies]);
 
   if (loading) {
@@ -80,27 +144,41 @@ export default function Dashboard() {
       ? `${fmtMonth(allMonths[0])} → ${fmtMonth(allMonths[allMonths.length - 1])}`
       : "";
 
+  const profileStudy = profileStudyId ? studies.find((s) => s.NCTId === profileStudyId) ?? null : null;
+  const profileChanges = profileStudyId ? changes.filter((c) => c.NCTId === profileStudyId) : [];
+
   return (
-    <div className="min-h-screen bg-[#F2F6F8]">
-      <div className="max-w-[1400px] mx-auto px-8 py-8 space-y-6">
+    <div className="h-screen overflow-hidden bg-[#F2F6F8] flex flex-col">
+      <div className="max-w-[1400px] w-full mx-auto px-8 pt-8 pb-8 flex flex-col gap-5 h-full min-h-0">
+
         <Header
           dateRange={dateRangeLabel}
           timeRange={timeRange}
-          onSelectRange={setTimeRange}
+          onSelectRange={(r) => { setTimeRange(r); setSelectedField("all"); }}
         />
 
         <KpiCards
           changes={filtered}
-          allChanges={changes}
+          allChanges={rangeChanges}
           totalTrials={studies.length}
           statusGroupCounts={statusGroupCounts}
+          statusGroupDetails={statusGroupDetails}
+          comparison={comparison}
+          studies={studies}
+          onOpenStudy={setProfileStudyId}
         />
 
-        <div className="grid grid-cols-3 gap-5">
-          <div className="col-span-2">
-            <MonthlyChart changes={rangeChanges} activeMonths={activeMonths} />
+        {/* Main content — fills remaining height */}
+        <div className="grid grid-cols-4 gap-5 flex-1 min-h-0">
+          <div className="col-span-3 min-h-0 flex flex-col">
+            <ChangesTable
+              changes={filtered}
+              selectedField={selectedField}
+              onClearField={() => setSelectedField("all")}
+              onOpenStudy={setProfileStudyId}
+            />
           </div>
-          <div className="col-span-1">
+          <div className="col-span-1 min-h-0">
             <FieldBreakdown
               changes={rangeChanges}
               selectedField={selectedField}
@@ -109,16 +187,15 @@ export default function Dashboard() {
           </div>
         </div>
 
-        <ChangesTable
-          changes={filtered}
-          selectedField={selectedField}
-          onClearField={() => setSelectedField("all")}
-        />
-
-        <footer className="text-xs text-[#6B8A96] text-center py-4">
-          Data sourced from <a href="https://clinicaltrials.gov" target="_blank" rel="noopener noreferrer" className="text-[#1B6B8A] hover:underline">ClinicalTrials.gov</a> · DMD Trials Change Tracker
-        </footer>
       </div>
+
+      {profileStudy && (
+        <StudyProfileModal
+          study={profileStudy}
+          changes={profileChanges}
+          onClose={() => setProfileStudyId(null)}
+        />
+      )}
     </div>
   );
 }
