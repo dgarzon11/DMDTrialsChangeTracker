@@ -1,29 +1,48 @@
 # DMD Trials Change Tracker
 
-A monitoring dashboard for tracking field-level modifications across registered Duchenne Muscular Dystrophy (DMD) clinical trials on ClinicalTrials.gov.
+A monitoring dashboard that tracks field-level changes across all registered Duchenne Muscular Dystrophy (DMD) clinical trials on [ClinicalTrials.gov](https://clinicaltrials.gov). Updated monthly.
 
 ## Features
 
-- **Total Trials** donut with status-group breakdown (Active / Planned / Closed / Unknown)
-- **KPI cards**: total changes, trials affected, new studies added
-- **Monthly change volume** stacked bar chart by field type
-- **Changes by Field** interactive breakdown (click to filter the table)
-- **List of Changes** table, grouped by month, with:
-  - Semantic status badges (Recruiting, Completed, etc.)
-  - Enrollment deltas with ▲ / ▼ indicators
-  - Direct links to ClinicalTrials.gov
-  - Search, sort, CSV export
-- **Time-range filters**: All months · Last month · Last 3 / 6 months · Last year
+### Overview KPIs
+- **Total Trials** donut chart with status-group breakdown (Active / Planned / Closed / Unknown)
+- **Total Changes**, **Trials Affected**, **New Studies Added** — each with a sparkline and month-over-month delta badge
+- "New Studies" KPI links directly to a filtered view of newly registered trials
+
+### All Trials Table
+- Full list of every DMD trial with status pills, phase, enrollment, dates, and sponsor
+- Sort by any column · Filter by status group · Search by NCT ID, title, or sponsor
+- Study profile popup with full trial details (design, outcomes, summary, change history)
+- Export visible rows as `studies.csv`
+
+### List of Changes
+- Every field-level change recorded per month, grouped or sorted by any column
+- Status changes rendered as coloured pills (Recruiting, Completed, etc.)
+- Enrollment deltas with ▲ / ▼ indicators
+- Info icon tooltip showing full original → final text (overflow-safe, fixed positioning)
+- Click any NCT ID to open the study profile popup
+- Search, sort, CSV export
+
+### Study Profile Popup
+- At-a-glance stats: phase, enrollment, start date, completion date
+- Full metadata: sponsor, collaborators, population, study design, condition, intervention, outcomes
+- Expandable brief summary
+- Complete change history for that study with status pills and info tooltips
+
+### Filters
+- Time range: All · Last month · Last 3 / 6 months · Last year
+- Field filter: click any bar in the "Changes by Field" chart to filter the table
 
 ## Stack
 
-- [Next.js 16](https://nextjs.org) (App Router, Turbopack)
-- React 19
-- TypeScript
-- Tailwind CSS 4
-- [Recharts](https://recharts.org)
-- [Framer Motion](https://www.framer.com/motion/)
-- [PapaParse](https://www.papaparse.com) for CSV parsing
+| Layer | Library |
+|---|---|
+| Framework | [Next.js 16](https://nextjs.org) (App Router, Turbopack) |
+| UI | React 19 + TypeScript |
+| Styling | Tailwind CSS 4 |
+| Charts | [Recharts](https://recharts.org) |
+| Animation | [Framer Motion](https://www.framer.com/motion/) |
+| CSV parsing | [PapaParse](https://www.papaparse.com) |
 
 ## Getting started
 
@@ -34,14 +53,28 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Data
+## Updating the data
 
-CSV files in `public/data/`:
+The dashboard reads two CSV files from `public/data/`:
 
-- `changes.csv` — field-level changes detected between snapshots
-- `studies.csv` — latest snapshot of all DMD trials
-- `studies_history.csv` — historical snapshots per trial
+| File | Contents |
+|---|---|
+| `changes.csv` | Field-level changes detected between monthly snapshots |
+| `studies.csv` | Latest snapshot of all DMD trials |
+
+To publish a new month of data:
+
+1. Replace both files with the updated versions
+2. Commit and push to `main`
+
+```bash
+git add public/data/changes.csv public/data/studies.csv
+git commit -m "data: update to <month YYYY>"
+git push
+```
+
+If the app is deployed on Vercel it will redeploy automatically.
 
 ## Deployment
 
-Optimized for [Vercel](https://vercel.com). Push to the `main` branch and connect the repo in the Vercel dashboard, or run `vercel` from the CLI.
+Optimised for [Vercel](https://vercel.com). Connect the repo in the Vercel dashboard — no additional configuration needed. Every push to `main` triggers a new deployment.
