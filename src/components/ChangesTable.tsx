@@ -190,7 +190,7 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
       </div>
 
       {/* Column headers — all clickable */}
-      <div className="grid grid-cols-[110px_180px_100px_1fr_1fr_1fr_80px_44px] gap-x-3 px-5 py-2 bg-[#F8FAFB] border-b border-[#EEF4F6] text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">
+      <div className="grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_80px_44px] gap-x-3 px-5 py-2 bg-[#F8FAFB] border-b border-[#EEF4F6] text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">
         <button className={thBtn} onClick={() => handleSort("month")}>
           <svg {...ICON_PROPS}><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           Month <SortIcon field="month" />
@@ -285,7 +285,7 @@ function Row({
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, delay: Math.min(idx * 0.015, 0.4) }}
-      className={`grid grid-cols-[110px_180px_100px_1fr_1fr_1fr_80px_44px] gap-x-3 pl-[18px] pr-5 py-2.5 border-b border-[#F2F6F8] border-l-[3px] border-l-transparent hover:border-l-[#1B6B8A] hover:bg-[#F8FAFB] items-center group ${bg}`}
+      className={`grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_80px_44px] gap-x-3 pl-[18px] pr-5 py-2.5 border-b border-[#F2F6F8] border-l-[3px] border-l-transparent hover:border-l-[#1B6B8A] hover:bg-[#F8FAFB] items-center group ${bg}`}
     >
       {/* Month */}
       <span className="text-xs font-semibold text-[#0B3D52]">
