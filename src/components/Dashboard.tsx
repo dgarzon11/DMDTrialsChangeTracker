@@ -131,7 +131,7 @@ export default function Dashboard() {
 
   if (loading) {
     return (
-      <div className="h-screen bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] bg-dot-pattern flex flex-col">
+      <div className="h-screen bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] flex flex-col">
         <div className="max-w-[1400px] w-full mx-auto px-8 pt-8 pb-8 flex flex-col gap-5 h-full min-h-0">
           {/* Header skeleton */}
           <div className="space-y-4">
@@ -173,7 +173,7 @@ export default function Dashboard() {
   const profileChanges = profileStudyId ? changes.filter((c) => c.NCTId === profileStudyId) : [];
 
   return (
-    <div className="h-screen overflow-hidden bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] bg-dot-pattern flex flex-col">
+    <div className="h-screen overflow-hidden bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] flex flex-col">
       <div className="max-w-[1400px] w-full mx-auto px-8 pt-8 pb-8 flex flex-col gap-5 h-full min-h-0">
 
         <Header

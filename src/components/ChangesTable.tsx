@@ -70,11 +70,6 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
 
   const q = query.trim().toLowerCase();
 
-  const latestMonth = useMemo(
-    () => [...new Set(changes.map((c) => c.monthKey))].sort().pop() ?? "",
-    [changes]
-  );
-
   const filtered = useMemo(() => {
     if (!q) return changes;
     return changes.filter(
@@ -242,7 +237,6 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
               monthLabel={isGrouped ? c._monthLabel : fmtMonth(c.monthKey, "long")}
               first={isGrouped ? c._first : true}
               alwaysShowMonth={!isGrouped}
-              isLatest={c.monthKey === latestMonth}
               q={q}
               onOpenStudy={onOpenStudy}
             />
@@ -277,8 +271,8 @@ function LegendDot({ color, label }: { color: string; label: string }) {
 }
 
 function Row({
-  idx, change, monthLabel, first, alwaysShowMonth, isLatest, q, onOpenStudy,
-}: { idx: number; change: EnrichedChange; monthLabel: string; first: boolean; alwaysShowMonth: boolean; isLatest: boolean; q: string; onOpenStudy: (nctId: string) => void }) {
+  idx, change, monthLabel, first, alwaysShowMonth, q, onOpenStudy,
+}: { idx: number; change: EnrichedChange; monthLabel: string; first: boolean; alwaysShowMonth: boolean; q: string; onOpenStudy: (nctId: string) => void }) {
   const c = change;
   const bg = c.isNewStudy ? "bg-[#F4FAF6]" : "bg-white";
   const showMonth = alwaysShowMonth || first;
@@ -311,7 +305,6 @@ function Row({
 
       {/* NCT ID — click opens profile */}
       <div className="flex items-center gap-1 min-w-0">
-        {isLatest && <span className="w-1.5 h-1.5 rounded-full bg-[#3A9B6C] animate-pulse mr-1 inline-block flex-shrink-0" title="Recent change" />}
         <button
           onClick={() => onOpenStudy(c.NCTId)}
           className="text-xs font-mono text-[#1B6B8A] hover:text-[#0B3D52] hover:underline truncate text-left"
