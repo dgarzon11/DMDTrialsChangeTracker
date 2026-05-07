@@ -187,7 +187,7 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
       </div>
 
       {/* Column headers — all clickable */}
-      <div className="grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_44px] gap-x-3 px-5 py-2 bg-[#F8FAFB] border-b border-[#EEF4F6] text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">
+      <div className="grid grid-cols-[100px_120px_95px_140px_1fr_1fr_44px] gap-x-3 px-5 py-2 bg-[#F8FAFB] border-b border-[#EEF4F6] text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">
         <button className={thBtn} onClick={() => handleSort("month")}>
           <svg {...ICON_PROPS}><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           Month <SortIcon field="month" />
@@ -205,7 +205,7 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
           Sponsor <SortIcon field="sponsor" />
         </button>
         <span className="text-right">Original</span>
-        <span>Final</span>
+        <span className="pl-4">Final</span>
         <span></span>
       </div>
 
@@ -279,7 +279,7 @@ function Row({
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, delay: Math.min(idx * 0.015, 0.4) }}
-      className={`grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_44px] gap-x-3 pl-[18px] pr-5 py-2.5 border-b border-[#F2F6F8] border-l-[3px] border-l-transparent hover:border-l-[#1B6B8A] hover:bg-[#F8FAFB] items-center group ${bg}`}
+      className={`grid grid-cols-[100px_120px_95px_140px_1fr_1fr_44px] gap-x-3 pl-[18px] pr-5 py-2.5 border-b border-[#F2F6F8] border-l-[3px] border-l-transparent hover:border-l-[#1B6B8A] hover:bg-[#F8FAFB] items-center group ${bg}`}
     >
       {/* Month */}
       <span className="text-xs font-semibold text-[#0B3D52]">
@@ -324,15 +324,19 @@ function Row({
       {/* Final */}
       {c.isNewStudy ? <span /> : (
       <div className="flex items-center gap-1.5 min-w-0">
-        {/* Info icon — fixed-position tooltip (escapes overflow clipping) */}
+        <span className="text-[#C5DCE4] text-xs flex-shrink-0">→</span>
+        <span className="text-xs font-medium text-[#1A2E38] truncate flex-1 min-w-0" title={c.final_value}>
+          {renderValue(c, "final")}
+        </span>
+        {/* Info icon at end — fixed-position tooltip (escapes overflow clipping) */}
         <div
           ref={iconRef}
-          className="flex-shrink-0 cursor-default"
+          className="flex-shrink-0 cursor-default ml-auto"
           onMouseEnter={() => {
             if (iconRef.current) {
               const r = iconRef.current.getBoundingClientRect();
               const tipW = 304;
-              const tipH = 110; // rough estimate
+              const tipH = 110;
               const x = Math.min(r.left, window.innerWidth - tipW - 12);
               const spaceBelow = window.innerHeight - r.bottom;
               const y = spaceBelow < tipH + 10 ? r.top - tipH - 6 : r.bottom + 6;
@@ -368,10 +372,6 @@ function Row({
             )}
           </div>
         )}
-        <span className="text-[#C5DCE4] text-xs">→</span>
-        <span className="text-xs font-medium text-[#1A2E38] truncate" title={c.final_value}>
-          {renderValue(c, "final")}
-        </span>
       </div>
       )}
 
