@@ -13,7 +13,7 @@ interface Props {
   onOpenStudy: (nctId: string) => void;
 }
 
-type SortField = "month" | "field" | "NCTId" | "sponsor" | "start_value" | "final_value" | "delta";
+type SortField = "month" | "field" | "NCTId" | "sponsor" | "start_value" | "final_value";
 type SortDir = "asc" | "desc";
 
 function truncate(s: string, max = 40) {
@@ -107,9 +107,6 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
 
     // Flat sort
     const sorted = [...filtered].sort((a, b) => {
-      if (sortField === "delta") {
-        return ((a.delta ?? 0) - (b.delta ?? 0)) * dir;
-      }
       const av = (a[sortField as keyof EnrichedChange] ?? "") as string;
       const bv = (b[sortField as keyof EnrichedChange] ?? "") as string;
       return av.toString().toLowerCase() < bv.toString().toLowerCase() ? -dir
@@ -190,7 +187,7 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
       </div>
 
       {/* Column headers — all clickable */}
-      <div className="grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_80px_44px] gap-x-3 px-5 py-2 bg-[#F8FAFB] border-b border-[#EEF4F6] text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">
+      <div className="grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_44px] gap-x-3 px-5 py-2 bg-[#F8FAFB] border-b border-[#EEF4F6] text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">
         <button className={thBtn} onClick={() => handleSort("month")}>
           <svg {...ICON_PROPS}><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
           Month <SortIcon field="month" />
@@ -209,9 +206,6 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
         </button>
         <span className="text-right">Original</span>
         <span>Final</span>
-        <button className={`${thBtn} justify-center`} onClick={() => handleSort("delta")}>
-          <SortIcon field="delta" /> Δ
-        </button>
         <span></span>
       </div>
 
@@ -285,7 +279,7 @@ function Row({
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, delay: Math.min(idx * 0.015, 0.4) }}
-      className={`grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_80px_44px] gap-x-3 pl-[18px] pr-5 py-2.5 border-b border-[#F2F6F8] border-l-[3px] border-l-transparent hover:border-l-[#1B6B8A] hover:bg-[#F8FAFB] items-center group ${bg}`}
+      className={`grid grid-cols-[110px_140px_100px_1fr_1fr_1fr_44px] gap-x-3 pl-[18px] pr-5 py-2.5 border-b border-[#F2F6F8] border-l-[3px] border-l-transparent hover:border-l-[#1B6B8A] hover:bg-[#F8FAFB] items-center group ${bg}`}
     >
       {/* Month */}
       <span className="text-xs font-semibold text-[#0B3D52]">
@@ -380,19 +374,6 @@ function Row({
         </span>
       </div>
       )}
-
-      {/* Delta */}
-      <div className="flex items-center justify-center">
-        {c.delta !== undefined && c.delta !== 0 && (
-          <span
-            className={`text-[10px] font-mono font-bold px-1.5 py-0.5 rounded ${
-              c.delta > 0 ? "text-[#3A9B6C] bg-[#E8F5EE]" : "text-[#C94A4A] bg-[#F8E8E8]"
-            }`}
-          >
-            {c.delta > 0 ? "▲" : "▼"} {Math.abs(c.delta)}
-          </span>
-        )}
-      </div>
 
       {/* Actions */}
       <div className="flex items-center justify-end">
