@@ -248,7 +248,7 @@ export default function ChangesTable({ changes, selectedField, onClearField, onO
       <div className="flex-shrink-0 px-5 py-3 border-t border-[#EEF4F6] flex items-center justify-between text-[11px] text-[#6B8A96] flex-wrap gap-2">
         <span className="flex items-center gap-1.5">
           <span>💡</span>
-          Click any NCT ID to open the trial on ClinicalTrials.gov
+          Click any NCT ID to view the study profile
         </span>
         <div className="flex items-center gap-3">
           <LegendDot color="#3A9B6C" label="New study" />
