@@ -57,6 +57,7 @@ export const EXCLUDED_FIELDS = new Set([
   "Secondary Id",
   "Minimum Age Months",  // derived from Minimum Age — duplicate change
   "Maximum Age Months",  // derived from Maximum Age — duplicate change
+  "Org Study Id",
 ]);
 
 // Semantic grouping of trial statuses
