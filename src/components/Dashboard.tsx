@@ -130,10 +130,34 @@ export default function Dashboard() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="flex flex-col items-center gap-3">
-          <div className="w-10 h-10 border-2 border-[#1B6B8A] border-t-transparent rounded-full animate-spin" />
-          <p className="text-[#6B8A96] text-sm">Loading change data…</p>
+      <div className="h-screen bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] flex flex-col">
+        <div className="max-w-[1400px] w-full mx-auto px-8 pt-8 pb-8 flex flex-col gap-5 h-full min-h-0">
+          {/* Header skeleton */}
+          <div className="space-y-4">
+            <div className="skeleton h-8 w-96" />
+            <div className="skeleton h-4 w-64" />
+            <div className="flex gap-2 mt-2">
+              {[80, 96, 112, 104, 80].map((w, i) => (
+                <div key={i} className="skeleton h-7 rounded-full" style={{ width: w }} />
+              ))}
+            </div>
+          </div>
+          {/* KPI cards skeleton */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {[0, 1, 2, 3].map((i) => (
+              <div key={i} className="bg-white rounded-2xl p-4 border border-[#DDE8EC] flex flex-col gap-3">
+                <div className="skeleton h-3 w-24" />
+                <div className="skeleton h-10 w-16" />
+                <div className="skeleton h-3 w-32" />
+                <div className="skeleton h-12 w-full mt-1" />
+              </div>
+            ))}
+          </div>
+          {/* Main content skeleton */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 flex-1 min-h-0">
+            <div className="lg:col-span-3 skeleton rounded-2xl" />
+            <div className="lg:col-span-1 skeleton rounded-2xl" />
+          </div>
         </div>
       </div>
     );
@@ -148,7 +172,7 @@ export default function Dashboard() {
   const profileChanges = profileStudyId ? changes.filter((c) => c.NCTId === profileStudyId) : [];
 
   return (
-    <div className="h-screen overflow-hidden bg-[#F2F6F8] flex flex-col">
+    <div className="h-screen overflow-hidden bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] flex flex-col">
       <div className="max-w-[1400px] w-full mx-auto px-8 pt-8 pb-8 flex flex-col gap-5 h-full min-h-0">
 
         <Header
@@ -169,8 +193,8 @@ export default function Dashboard() {
         />
 
         {/* Main content — fills remaining height */}
-        <div className="grid grid-cols-4 gap-5 flex-1 min-h-0">
-          <div className="col-span-3 min-h-0 flex flex-col">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 flex-1 min-h-0">
+          <div className="lg:col-span-3 min-h-0 flex flex-col">
             <ChangesTable
               changes={filtered}
               selectedField={selectedField}
@@ -178,7 +202,7 @@ export default function Dashboard() {
               onOpenStudy={setProfileStudyId}
             />
           </div>
-          <div className="col-span-1 min-h-0">
+          <div className="lg:col-span-1 min-h-0">
             <FieldBreakdown
               changes={rangeChanges}
               selectedField={selectedField}

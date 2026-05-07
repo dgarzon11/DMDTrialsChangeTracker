@@ -160,7 +160,7 @@ export default function StudyProfileModal({ study, changes, onClose }: Props) {
           initial={{ opacity: 0, scale: 0.97, y: 8 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.97, y: 8 }}
-          transition={{ duration: 0.2 }}
+          transition={{ type: "spring", damping: 28, stiffness: 300 }}
           className="bg-white rounded-2xl shadow-2xl border border-[#DDE8EC] w-full max-w-4xl max-h-[90vh] flex flex-col"
           onClick={(e) => e.stopPropagation()}
         >
@@ -170,7 +170,7 @@ export default function StudyProfileModal({ study, changes, onClose }: Props) {
               <div className="flex-1 min-w-0">
                 {/* NCT ID row */}
                 <div className="flex items-center gap-3 flex-wrap">
-                  <span className="text-3xl font-mono font-bold text-[#1B6B8A] tracking-tight">
+                  <span className="text-3xl font-mono font-bold text-[#1B6B8A] tracking-tight bg-[#EAF4F8] px-3 py-1 rounded-xl">
                     {study.NCTId}
                   </span>
                   {study.Acronym && (

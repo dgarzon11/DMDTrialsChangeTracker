@@ -117,7 +117,7 @@ export default function TrialsModal({ studies, onClose, onOpenStudy, title = "Al
           initial={{ opacity: 0, scale: 0.97, y: 8 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.97, y: 8 }}
-          transition={{ duration: 0.2 }}
+          transition={{ type: "spring", damping: 28, stiffness: 300 }}
           className="bg-white rounded-2xl shadow-2xl border border-[#DDE8EC] w-full max-w-6xl max-h-[85vh] flex flex-col"
           onClick={(e) => e.stopPropagation()}
         >
@@ -200,7 +200,14 @@ export default function TrialsModal({ studies, onClose, onOpenStudy, title = "Al
           {/* Rows */}
           <div className="overflow-y-auto flex-1 min-h-0">
             {sorted.length === 0 ? (
-              <div className="flex items-center justify-center py-16 text-sm text-[#6B8A96]">No trials match your search.</div>
+              <div className="flex flex-col items-center justify-center py-16 gap-2 text-[#6B8A96]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-[#C5DCE4] mb-1">
+                  <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                  <path d="M8 11h6"/>
+                </svg>
+                <p className="text-sm font-medium">No trials match your search</p>
+                <p className="text-xs text-[#9BB0BB]">Try a different search term or status filter</p>
+              </div>
             ) : (
               sorted.map((s) => {
                 const group = STATUS_GROUPS[s.OverallStatus] ?? "Unknown";
@@ -208,7 +215,7 @@ export default function TrialsModal({ studies, onClose, onOpenStudy, title = "Al
                 return (
                 <div
                   key={s.NCTId}
-                  className="grid grid-cols-[90px_130px_1fr_150px_55px_72px_82px_90px_56px] gap-x-3 px-6 py-2 border-b border-[#F2F6F8] hover:bg-[#F8FAFB] transition-colors items-center"
+                  className="grid grid-cols-[90px_130px_1fr_150px_55px_72px_82px_90px_56px] gap-x-3 pl-[22px] pr-6 py-2 border-b border-[#F2F6F8] border-l-[3px] border-l-transparent hover:border-l-[#1B6B8A] hover:bg-[#F8FAFB] transition-colors items-center"
                 >
                   <span className="text-[11px] font-mono text-[#1B6B8A] font-medium">{s.NCTId}</span>
 

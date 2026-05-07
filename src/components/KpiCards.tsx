@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { EnrichedChange, STATUS_GROUP_COLORS, Study, fmtMonthShort, fmtMonthFull } from "@/lib/data";
 import { Comparison } from "./Dashboard";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import TrialsModal from "./TrialsModal";
 import {
   LineChart, Line, ResponsiveContainer, Tooltip,
@@ -24,6 +24,23 @@ const STATUS_ORDER = ["Active", "Planned", "Closed", "Unknown"] as const;
 const STATUS_SHORT: Record<string, string> = {
   Active: "Active", Planned: "Planned", Closed: "Closed", Unknown: "Unknown",
 };
+
+function useCountUp(target: number, duration = 900) {
+  const [val, setVal] = useState(0);
+  const rafRef = useRef<number>(0);
+  useEffect(() => {
+    const startTime = performance.now();
+    function tick(now: number) {
+      const p = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3); // ease-out cubic
+      setVal(Math.round(eased * target));
+      if (p < 1) rafRef.current = requestAnimationFrame(tick);
+    }
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [target, duration]);
+  return val;
+}
 
 export default function KpiCards({
   changes, allChanges, totalTrials, statusGroupCounts, statusGroupDetails, comparison, studies, onOpenStudy,
@@ -85,7 +102,7 @@ export default function KpiCards({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.05 }}
-      className="grid grid-cols-4 gap-4"
+      className="grid grid-cols-2 lg:grid-cols-4 gap-4"
     >
       <TrialsDonutCard
         total={totalTrials}
@@ -249,6 +266,7 @@ function SparkCard({
   delta, deltaCurrentVal, deltaPrevVal, deltaCurrentLabel, deltaPrevLabel,
   onViewAll,
 }: SparkCardProps) {
+  const animated = useCountUp(value);
   const firstLabel = spark[0]?.label ?? "";
   const lastLabel = spark[spark.length - 1]?.label ?? "";
   const hasSpark = spark.length > 1;
@@ -272,7 +290,7 @@ function SparkCard({
           </div>
         )}
       </div>
-      <p className="text-4xl font-bold text-[#0B3D52] mt-2">{value}</p>
+      <p className="text-4xl font-bold text-[#0B3D52] mt-2">{animated}</p>
       <div className="flex items-center justify-between mt-0.5">
         <p className="text-xs text-[#6B8A96]">{hint}</p>
         {onViewAll && (
