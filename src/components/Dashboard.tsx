@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import {
   loadChanges, loadStudies, enrich, EnrichedChange, Study, fmtMonth, STATUS_GROUPS,
 } from "@/lib/data";
+import { motion } from "framer-motion";
 import Header, { TimeRange } from "./Header";
 import KpiCards from "./KpiCards";
 import FieldBreakdown from "./FieldBreakdown";
@@ -130,7 +131,7 @@ export default function Dashboard() {
 
   if (loading) {
     return (
-      <div className="h-screen bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] flex flex-col">
+      <div className="h-screen bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] bg-dot-pattern flex flex-col">
         <div className="max-w-[1400px] w-full mx-auto px-8 pt-8 pb-8 flex flex-col gap-5 h-full min-h-0">
           {/* Header skeleton */}
           <div className="space-y-4">
@@ -172,7 +173,7 @@ export default function Dashboard() {
   const profileChanges = profileStudyId ? changes.filter((c) => c.NCTId === profileStudyId) : [];
 
   return (
-    <div className="h-screen overflow-hidden bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] flex flex-col">
+    <div className="h-screen overflow-hidden bg-gradient-to-br from-[#E8F2F6] via-[#F2F6F8] to-[#F5F9FA] bg-dot-pattern flex flex-col">
       <div className="max-w-[1400px] w-full mx-auto px-8 pt-8 pb-8 flex flex-col gap-5 h-full min-h-0">
 
         <Header
@@ -181,35 +182,42 @@ export default function Dashboard() {
           onSelectRange={(r) => { setTimeRange(r); setSelectedField("all"); }}
         />
 
-        <KpiCards
-          changes={filtered}
-          allChanges={rangeChanges}
-          totalTrials={studies.length}
-          statusGroupCounts={statusGroupCounts}
-          statusGroupDetails={statusGroupDetails}
-          comparison={comparison}
-          studies={studies}
-          onOpenStudy={setProfileStudyId}
-        />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4 }}
+          className="flex flex-col gap-5 flex-1 min-h-0"
+        >
+          <KpiCards
+            changes={filtered}
+            allChanges={rangeChanges}
+            totalTrials={studies.length}
+            statusGroupCounts={statusGroupCounts}
+            statusGroupDetails={statusGroupDetails}
+            comparison={comparison}
+            studies={studies}
+            onOpenStudy={setProfileStudyId}
+          />
 
-        {/* Main content — fills remaining height */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 flex-1 min-h-0">
-          <div className="lg:col-span-3 min-h-0 flex flex-col">
-            <ChangesTable
-              changes={filtered}
-              selectedField={selectedField}
-              onClearField={() => setSelectedField("all")}
-              onOpenStudy={setProfileStudyId}
-            />
+          {/* Main content — fills remaining height */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 flex-1 min-h-0">
+            <div className="lg:col-span-3 min-h-0 flex flex-col">
+              <ChangesTable
+                changes={filtered}
+                selectedField={selectedField}
+                onClearField={() => setSelectedField("all")}
+                onOpenStudy={setProfileStudyId}
+              />
+            </div>
+            <div className="lg:col-span-1 min-h-0">
+              <FieldBreakdown
+                changes={rangeChanges}
+                selectedField={selectedField}
+                onSelectField={setSelectedField}
+              />
+            </div>
           </div>
-          <div className="lg:col-span-1 min-h-0">
-            <FieldBreakdown
-              changes={rangeChanges}
-              selectedField={selectedField}
-              onSelectField={setSelectedField}
-            />
-          </div>
-        </div>
+        </motion.div>
 
       </div>
 

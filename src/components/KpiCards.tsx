@@ -178,12 +178,9 @@ function makeSparkTooltip(accent: string, seriesLabel: string) {
     const d = payload[0]?.payload;
     if (!d) return null;
     return (
-      <div
-        className="bg-white border rounded-lg px-3 py-2 text-xs shadow-md"
-        style={{ borderColor: `${accent}55` }}
-      >
-        <p className="font-semibold text-[#0B3D52] mb-0.5">{d.fullLabel}</p>
-        <p style={{ color: accent }}>{seriesLabel}: <span className="font-bold">{d.v}</span></p>
+      <div className="bg-[#0B3D52] text-white border border-[#1B6B8A]/40 rounded-lg px-3 py-2 text-xs shadow-md">
+        <p className="text-[#7BAFC4] uppercase tracking-wider text-[10px] mb-0.5">{d.fullLabel}</p>
+        <p className="text-white">{seriesLabel}: <span className="font-bold">{d.v}</span></p>
       </div>
     );
   };
@@ -273,7 +270,7 @@ function SparkCard({
   const showDelta = deltaCurrentVal !== undefined && deltaPrevVal !== undefined;
 
   return (
-    <div className="bg-white rounded-2xl p-4 border border-[#DDE8EC] shadow-[0_1px_2px_rgba(11,61,82,0.04)] relative overflow-hidden flex flex-col">
+    <div className="bg-white rounded-2xl p-4 border border-[#DDE8EC] shadow-card hover:shadow-card-hover transition-shadow relative overflow-hidden flex flex-col">
       <div className="absolute top-0 left-0 h-1 w-full" style={{ background: accent }} />
       <div className="flex items-start justify-between gap-2">
         <p className="text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">{label}</p>
@@ -290,7 +287,7 @@ function SparkCard({
           </div>
         )}
       </div>
-      <p className="text-4xl font-bold text-[#0B3D52] mt-2">{animated}</p>
+      <p className="text-4xl font-bold text-[#0B3D52] mt-2 tabular-nums tracking-tight">{animated}</p>
       <div className="flex items-center justify-between mt-0.5">
         <p className="text-xs text-[#6B8A96]">{hint}</p>
         {onViewAll && (
@@ -306,7 +303,7 @@ function SparkCard({
             onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = `${accent}10`; }}
           >
             View all
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </button>
@@ -354,17 +351,17 @@ const DonutTooltip = (props: Record<string, unknown>) => {
 
   return (
     <div
-      className="bg-white border rounded-xl px-3 py-2.5 text-xs shadow-lg"
-      style={{ borderColor: `${color}55`, minWidth: 170 }}
+      className="bg-[#0B3D52] text-white border border-[#1B6B8A]/40 rounded-xl px-3 py-2.5 text-xs shadow-lg"
+      style={{ minWidth: 170 }}
     >
       <div className="flex items-center gap-1.5 mb-2">
         <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: color }} />
-        <span className="font-bold text-[#0B3D52]">{name}</span>
-        <span className="ml-auto font-bold text-[#0B3D52] text-sm">{value}</span>
+        <span className="font-bold text-white">{name}</span>
+        <span className="ml-auto font-bold text-white text-sm">{value}</span>
       </div>
       <div className="space-y-0.5">
         {details.map((s) => (
-          <div key={s} className="flex items-center gap-1.5 text-[#6B8A96]">
+          <div key={s} className="flex items-center gap-1.5 text-[#7BAFC4]">
             <span className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: color }} />
             {s}
           </div>
@@ -429,16 +426,16 @@ function SvgDonut({
       {/* Hover tooltip */}
       {hovSeg && (
         <div
-          className="absolute left-full top-0 ml-2 z-50 bg-white border rounded-xl px-3 py-2.5 text-xs shadow-lg pointer-events-none"
-          style={{ borderColor: `${hovSeg.color}55`, minWidth: 150 }}
+          className="absolute left-full top-0 ml-2 z-50 bg-[#0B3D52] text-white border border-[#1B6B8A]/40 rounded-xl px-3 py-2.5 text-xs shadow-lg pointer-events-none"
+          style={{ minWidth: 150 }}
         >
           <div className="flex items-center gap-1.5 mb-1.5">
             <span className="w-2.5 h-2.5 rounded-full flex-shrink-0" style={{ background: hovSeg.color }} />
-            <span className="font-bold text-[#0B3D52]">{hovSeg.name}</span>
-            <span className="ml-auto font-bold text-[#0B3D52] text-sm">{hovSeg.value}</span>
+            <span className="font-bold text-white">{hovSeg.name}</span>
+            <span className="ml-auto font-bold text-white text-sm">{hovSeg.value}</span>
           </div>
           {hovSeg.details.map((s) => (
-            <div key={s} className="flex items-center gap-1.5 text-[#6B8A96]">
+            <div key={s} className="flex items-center gap-1.5 text-[#7BAFC4]">
               <span className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: hovSeg.color }} />
               {s}
             </div>
@@ -463,7 +460,7 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
     .filter((d) => d.value > 0);
 
   return (
-    <div className="bg-white rounded-2xl p-4 border border-[#DDE8EC] shadow-[0_1px_2px_rgba(11,61,82,0.04)] relative overflow-visible flex flex-col">
+    <div className="bg-white rounded-2xl p-4 border border-[#DDE8EC] shadow-card hover:shadow-card-hover transition-shadow relative overflow-visible flex flex-col">
       <div className="absolute top-0 left-0 h-1 w-full rounded-t-2xl" style={{ background: "#0B3D52" }} />
       <div className="flex items-center justify-between">
         <p className="text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">Total Trials</p>
@@ -472,7 +469,7 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
           title="View all trials"
           className="flex items-center gap-1 text-[10px] font-semibold px-1.5 py-0.5 rounded-full border border-[#DDE8EC] text-[#6B8A96] hover:border-[#1B6B8A] hover:text-[#1B6B8A] hover:bg-[#EAF4F8] transition-all"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
           </svg>
           All trials
@@ -485,7 +482,7 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
         <div className="relative flex-shrink-0">
           <SvgDonut segments={segments} size={130} inner={38} outer={60} />
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
-            <span className="text-2xl font-bold text-[#0B3D52]">{total}</span>
+            <span className="text-2xl font-bold text-[#0B3D52] tabular-nums tracking-tight">{total}</span>
             <span className="text-[10px] text-[#6B8A96]">trials</span>
           </div>
         </div>

@@ -28,7 +28,7 @@ function renderChangeValue(c: EnrichedChange, side: "start" | "final") {
     return (
       <span
         className="inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
-        style={{ background: `${color}22`, color }}
+        style={{ background: `linear-gradient(135deg, ${color}18, ${color}30)`, color, border: `1px solid ${color}25` }}
       >
         <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: color }} />
         {raw}
@@ -180,7 +180,7 @@ export default function StudyProfileModal({ study, changes, onClose }: Props) {
                   )}
                   <span
                     className="inline-flex items-center gap-1 text-[11px] font-semibold px-2.5 py-0.5 rounded-full"
-                    style={{ background: `${groupColor}22`, color: groupColor }}
+                    style={{ background: `linear-gradient(135deg, ${groupColor}18, ${groupColor}30)`, color: groupColor, border: `1px solid ${groupColor}25` }}
                   >
                     <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: groupColor }} />
                     {study.OverallStatus}
@@ -204,7 +204,7 @@ export default function StudyProfileModal({ study, changes, onClose }: Props) {
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 text-xs text-[#1B6B8A] hover:text-[#0B3D52] border border-[#DDE8EC] hover:border-[#1B6B8A] px-3 py-1.5 rounded-lg transition-colors font-medium"
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                     <polyline points="15 3 21 3 21 9"/>
                     <line x1="10" y1="14" x2="21" y2="3"/>

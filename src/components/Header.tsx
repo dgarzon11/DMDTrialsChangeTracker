@@ -34,6 +34,12 @@ export default function Header({ dateRange, timeRange, onSelectRange }: Props) {
             <span className="text-[#89BDD0] font-light text-xl">·</span>
             <span className="text-[#1B6B8A]">Monthly Change Tracker</span>
           </h1>
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: "60px" }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="h-0.5 bg-gradient-to-r from-[#1B6B8A] to-[#7BAFC4] rounded-full mt-1"
+          />
           <p className="text-sm text-[#6B8A96] mt-1">
             Tracking field-level changes on a monthly basis · Source:{" "}
             <a href="https://clinicaltrials.gov" target="_blank" rel="noopener noreferrer" className="text-[#1B6B8A] hover:underline">
@@ -50,7 +56,7 @@ export default function Header({ dateRange, timeRange, onSelectRange }: Props) {
           <span className="text-[10px] text-[#9BB0BB] uppercase tracking-widest">Curated by</span>
           <span className="flex items-center gap-1 text-[13px] font-semibold text-[#3A6B7A] group-hover:text-[#1B6B8A] transition-colors">
             Diego Garzón
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="opacity-50 group-hover:opacity-100 transition-opacity">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-50 group-hover:opacity-100 transition-opacity">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
               <polyline points="15 3 21 3 21 9"/>
               <line x1="10" y1="14" x2="21" y2="3"/>

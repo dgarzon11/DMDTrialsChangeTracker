@@ -39,7 +39,7 @@ export default function FieldBreakdown({ changes, selectedField, onSelectField }
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.15 }}
-      className="bg-white rounded-2xl p-5 border border-[#DDE8EC] shadow-[0_1px_2px_rgba(11,61,82,0.04)] flex flex-col h-full"
+      className="bg-white rounded-2xl p-5 border border-[#DDE8EC] shadow-card flex flex-col h-full"
     >
       <div className="flex items-baseline justify-between mb-4">
         <div>

@@ -37,3 +37,22 @@ body {
   animation: shimmer 1.4s infinite linear;
   border-radius: 6px;
 }
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, #D8E5EB 1px, transparent 1px);
+  background-size: 22px 22px;
+  background-position: 0 0;
+}
+
+.shadow-card {
+  box-shadow: 0 1px 2px rgba(11,61,82,0.04), 0 4px 12px rgba(11,61,82,0.04);
+}
+.shadow-card-hover {
+  box-shadow: 0 1px 2px rgba(11,61,82,0.06), 0 8px 24px rgba(11,61,82,0.08);
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 2px solid rgba(27, 107, 138, 0.3);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
