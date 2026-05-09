@@ -77,10 +77,10 @@ export const STATUS_GROUPS: Record<string, string> = {
 };
 
 export const STATUS_GROUP_COLORS: Record<string, string> = {
-  Planned: "#1E7FA8",
-  Active: "#2A9D60",
-  Closed: "#6B8FA0",
-  Unknown: "#8B9EAB",
+  Planned: "#0B3D52",   // dark navy
+  Active:  "#1B6B8A",   // dark teal
+  Closed:  "#C5D4DA",   // light grey-blue
+  Unknown: "#7BAFC4",   // medium teal
 };
 
 // Color per field-changed category
