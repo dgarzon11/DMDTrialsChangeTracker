@@ -149,6 +149,7 @@ export default function KpiCards({
         deltaPrevVal={comparison.newStudiesPrevMonth}
         deltaCurrentLabel={comparison.currentMonthLabel}
         deltaPrevLabel={comparison.prevMonthLabel}
+        absoluteDelta
         onViewAll={stats.newStudies > 0 ? () => setShowNewStudies(true) : undefined}
       />
     </motion.div>
@@ -255,13 +256,16 @@ interface SparkCardProps {
   deltaPrevVal?: number;
   deltaCurrentLabel?: string;
   deltaPrevLabel?: string;
+  /** When true, top-right badge shows the absolute current-month value
+   *  ("+N last month") instead of a percent delta. */
+  absoluteDelta?: boolean;
   onViewAll?: () => void;
 }
 
 function SparkCard({
   label, value, hint, accent, spark, dotted,
   delta, deltaCurrentVal, deltaPrevVal, deltaCurrentLabel, deltaPrevLabel,
-  onViewAll,
+  absoluteDelta, onViewAll,
 }: SparkCardProps) {
   const animated = useCountUp(value);
   const firstLabel = spark[0]?.label ?? "";
@@ -276,14 +280,24 @@ function SparkCard({
         <p className="text-[11px] font-semibold text-[#6B8A96] uppercase tracking-wider">{label}</p>
         {showDelta && (
           <div className="flex flex-col items-end gap-0.5">
-            <DeltaBadge
-              delta={delta ?? null}
-              currentVal={deltaCurrentVal ?? 0}
-              prevVal={deltaPrevVal ?? 0}
-              currentLabel={deltaCurrentLabel ?? ""}
-              prevLabel={deltaPrevLabel ?? ""}
-            />
-            <span className="text-[9px] text-[#6B8A96]">vs prev month</span>
+            {absoluteDelta ? (
+              <span
+                className="text-[11px] font-bold px-2 py-0.5 rounded-full tabular-nums"
+                style={{ color: accent, background: `${accent}18`, border: `1px solid ${accent}33` }}
+                title={`${deltaCurrentVal} new in ${deltaCurrentLabel}`}
+              >
+                +{deltaCurrentVal}
+              </span>
+            ) : (
+              <DeltaBadge
+                delta={delta ?? null}
+                currentVal={deltaCurrentVal ?? 0}
+                prevVal={deltaPrevVal ?? 0}
+                currentLabel={deltaCurrentLabel ?? ""}
+                prevLabel={deltaPrevLabel ?? ""}
+              />
+            )}
+            <span className="text-[9px] text-[#6B8A96]">{absoluteDelta ? "last month" : "vs prev month"}</span>
           </div>
         )}
       </div>
