@@ -511,7 +511,7 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
       <div className="flex items-center gap-3 mt-2 flex-1">
         {/* SVG Donut with centre label */}
         <div className="relative flex-shrink-0">
-          <SvgDonut segments={segments} size={112} inner={36} outer={52} />
+          <SvgDonut segments={segments} size={130} inner={50} outer={60} />
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
             <span className="text-2xl font-bold text-[#0B3D52] tabular-nums tracking-tight">{total}</span>
             <span className="text-[10px] text-[#6B8A96]">trials</span>
@@ -519,14 +519,12 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
         </div>
 
         {/* Legend — tight vertical list */}
-        <div className="flex flex-col gap-1 flex-1 min-w-0">
+        <div className="flex flex-col gap-1 min-w-0">
           {STATUS_ORDER.map((g) => (
-            <div key={g} className="flex items-center justify-between gap-1">
-              <div className="flex items-center gap-1.5 min-w-0">
-                <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: STATUS_GROUP_COLORS[g] }} />
-                <span className="text-[11px] text-[#6B8A96] truncate">{STATUS_SHORT[g]}</span>
-              </div>
-              <span className="text-[11px] font-semibold text-[#0B3D52] tabular-nums">{groups[g] ?? 0}</span>
+            <div key={g} className="flex items-center gap-2 min-w-0">
+              <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: STATUS_GROUP_COLORS[g] }} />
+              <span className="text-[11px] text-[#6B8A96] truncate">{STATUS_SHORT[g]}</span>
+              <span className="text-[11px] font-semibold text-[#0B3D52] tabular-nums ml-1">{groups[g] ?? 0}</span>
             </div>
           ))}
         </div>
