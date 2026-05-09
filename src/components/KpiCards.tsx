@@ -6,7 +6,7 @@ import { Comparison } from "./Dashboard";
 import { useEffect, useMemo, useRef, useState } from "react";
 import TrialsModal from "./TrialsModal";
 import {
-  LineChart, Line, ResponsiveContainer, Tooltip,
+  AreaChart, Area, LineChart, Line, ResponsiveContainer, Tooltip,
 } from "recharts";
 
 interface Props {
@@ -314,18 +314,38 @@ function SparkCard({
         <div className="mt-3 flex-1">
           <div className="h-[52px]">
             <ResponsiveContainer width="100%" height="100%">
-              <LineChart data={spark} margin={{ top: 4, right: 4, left: 0, bottom: 4 }}>
-                <Tooltip content={makeSparkTooltip(accent, label)} />
-                <Line
-                  type="monotone"
-                  dataKey="v"
-                  stroke={accent}
-                  strokeWidth={1.5}
-                  strokeDasharray={dotted ? "4 3" : undefined}
-                  dot={dotted ? { r: 3, fill: accent, strokeWidth: 0 } : false}
-                  activeDot={{ r: 4, fill: accent, strokeWidth: 0 }}
-                />
-              </LineChart>
+              {dotted ? (
+                <LineChart data={spark} margin={{ top: 4, right: 4, left: 0, bottom: 4 }}>
+                  <Tooltip content={makeSparkTooltip(accent, label)} />
+                  <Line
+                    type="monotone"
+                    dataKey="v"
+                    stroke={accent}
+                    strokeWidth={1.5}
+                    strokeDasharray="4 3"
+                    dot={{ r: 3, fill: accent, strokeWidth: 0 }}
+                    activeDot={{ r: 4, fill: accent, strokeWidth: 0 }}
+                  />
+                </LineChart>
+              ) : (
+                <AreaChart data={spark} margin={{ top: 4, right: 4, left: 0, bottom: 4 }}>
+                  <defs>
+                    <linearGradient id={`spark-grad-${label.replace(/\s+/g, "-")}`} x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stopColor={accent} stopOpacity={0.32} />
+                      <stop offset="100%" stopColor={accent} stopOpacity={0.02} />
+                    </linearGradient>
+                  </defs>
+                  <Tooltip content={makeSparkTooltip(accent, label)} />
+                  <Area
+                    type="monotone"
+                    dataKey="v"
+                    stroke={accent}
+                    strokeWidth={1.75}
+                    fill={`url(#spark-grad-${label.replace(/\s+/g, "-")})`}
+                    activeDot={{ r: 4, fill: accent, strokeWidth: 0 }}
+                  />
+                </AreaChart>
+              )}
             </ResponsiveContainer>
           </div>
           {firstLabel && lastLabel && (
@@ -417,7 +437,7 @@ function SvgDonut({
             key={arc.name}
             d={arc.d}
             fill={arc.color}
-            opacity={hovered && hovered !== arc.name ? 0.5 : 1}
+            opacity={hovered === arc.name ? 0.95 : hovered ? 0.35 : 0.72}
             style={{ cursor: "pointer", transition: "opacity 0.15s" }}
             onMouseEnter={(e) => {
               setHovered(arc.name);
@@ -491,7 +511,7 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
       <div className="flex items-center gap-3 mt-2 flex-1">
         {/* SVG Donut with centre label */}
         <div className="relative flex-shrink-0">
-          <SvgDonut segments={segments} size={130} inner={38} outer={60} />
+          <SvgDonut segments={segments} size={112} inner={36} outer={52} />
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
             <span className="text-2xl font-bold text-[#0B3D52] tabular-nums tracking-tight">{total}</span>
             <span className="text-[10px] text-[#6B8A96]">trials</span>
