@@ -511,7 +511,7 @@ function TrialsDonutCard({ total, groups, details, onOpenModal }: DonutCardProps
       <div className="flex items-center gap-3 mt-2 flex-1">
         {/* SVG Donut with centre label */}
         <div className="relative flex-shrink-0">
-          <SvgDonut segments={segments} size={130} inner={50} outer={60} />
+          <SvgDonut segments={segments} size={130} inner={45} outer={60} />
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
             <span className="text-2xl font-bold text-[#0B3D52] tabular-nums tracking-tight">{total}</span>
             <span className="text-[10px] text-[#6B8A96]">trials</span>
