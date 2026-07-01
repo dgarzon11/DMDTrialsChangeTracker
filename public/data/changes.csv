@@ -54,6 +54,11 @@ NCT07581743,2026-06-01 12:36:46.620061,,New  Study  Added,,
 NCT07587242,2026-06-01 12:36:46.620061,,New  Study  Added,,
 NCT07608432,2026-06-01 12:36:46.620061,,New  Study  Added,,
 NCT07609394,2026-06-01 12:36:46.620061,,New  Study  Added,,
+NCT07629284,2026-07-01 10:42:02.701995,,New  Study  Added,,
+NCT07642635,2026-07-01 10:42:02.701995,,New  Study  Added,,
+NCT07664124,2026-07-01 10:42:02.701995,,New  Study  Added,,
+NCT07673809,2026-07-01 10:42:02.701995,,New  Study  Added,,
+NCT07674758,2026-07-01 10:42:02.701995,,New  Study  Added,,
 NCT00005574,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Org Study Id,000083,83
 NCT01247207,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Completed,Enrolling By Invitation
 NCT01247207,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Primary Completion Date,2026-02-10,2025-04-30
@@ -81,6 +86,9 @@ Design:
 * Participants will be screened with a medical history and physical exam.
 * Healthy volunteers will have one 2-hour visit with three tests. Magnetic resonance imaging (MRI) scans of the skeletal muscles and heart and diaphragm muscles will be carried out. Muscle ultrasound imaging of leg and arm muscles will also be done. Participants should not perform heavy physical activity like school sports or long walks during the week before the visit.
 * Participants in the GSK2402968 study will have the same series of tests as the healthy volunteers. The tests will be given during the study screening phase. They will be repeated after 3 months and 6 months of receiving the study agent (GSK2402968 or placebo) and at 6 months after stopping the GSK study."
+NCT01633866,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2031-06-01,2025-06-01
+NCT01633866,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Completion Date,2031-06-01,2025-06-01
+NCT01633866,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-12,2024-12-16
 NCT01648634,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Collaborator Name,"Association Française contre les Myopathies (AFM), Paris, URC-CIC Paris Descartes Necker Cochin","Association Française contre les Myopathies (AFM), Paris"
 NCT01834040,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Org Study Id,00102,102
 NCT01834066,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Secondary Outcome Measure,-Improvement of daily living scale and baseline in EMG(electromyography),#NAME?
@@ -139,6 +147,7 @@ NCT03368742,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Secondary Outc
 NCT03368742,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-03,2025-12-03
 NCT03368742,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-03,2026-02-03
 NCT03368742,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-08,2026-03-03
+NCT03368742,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-02,2026-05-08
 NCT03373968,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Overall Status,Recruiting,Active Not Recruiting
 NCT03508947,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Lead Sponsor Name,"Wave Life Sciences USA, Inc.",Wave Life Sciences Ltd.
 NCT03655223,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Minimum Age Months,0.0333333333333333,0.033333333
@@ -192,6 +201,11 @@ NCT04626674,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Secondary Outc
 NCT04626674,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Enrollment Count,83.0,55.0
 NCT04626674,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-04,2025-12-29
 NCT04626674,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-06,2026-03-04
+NCT04626674,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Brief Title,A Gene Transfer Therapy Study to Evaluate the Safety of and Expression From Delandistrogene Moxeparvovec (SRP-9001) in Participants With Duchenne Muscular Dystrophy (DMD) - Non-Ambulatory Cohort,A Gene Transfer Therapy Study to Evaluate the Safety of and Expression From Delandistrogene Moxeparvovec (SRP-9001) in Participants With Duchenne Muscular Dystrophy (DMD)
+NCT04626674,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Brief Summary,"Cohort 8 (non-ambulatory participants) is currently enrolling new participants. Enrollment for Cohorts 1 through 7 has been completed.
+This is an open-label gene transfer therapy study evaluating the safety of and expression from delandistrogene moxeparvovec in participants with Duchenne Muscular Dystrophy (DMD). The maximum participant duration for this study is 156 weeks.",This is an open-label gene transfer therapy study evaluating the safety of and expression from delandistrogene moxeparvovec in participants with DMD. The maximum participant duration for this study is 156 weeks.
+NCT04626674,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Condition,Duchenne Muscular Dystrophy,"Muscular Dystrophy, Duchenne"
+NCT04626674,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-24,2026-04-06
 NCT04632940,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Lead Sponsor Name,Kyntra Bio,FibroGen
 NCT04708314,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-03,2021-05-17
 NCT04768062,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Unknown,Active Not Recruiting
@@ -211,6 +225,7 @@ NCT05102916,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Collaborator N
 NCT05126758,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Secondary Outcome Measure,"Change in cardiac muscle function and structure by assessment of left ventricular ejection fraction, Change in cardiac muscle function and structure by assessment of left ventricular end-systolic volume, Change in cardiac muscle function and structure by assessment of left ventricular end-diastolic volume, Change in elbow and distal level upper limb function, Change in Global Statistical Test (Total GST) combining upper limb function, cardiac muscle function, and patient reported measure of disease severity, Changes in cardiac inflammation biomarker, creatine kinase MB isoenzyme [CK-MB], Change in hand-to-mouth function in the context of functional eating, Change in hand-to-mouth function, Number of patients with total loss of hand-to-mouth function, Changes in patient-reported upper limb function","Change in cardiac muscle function and structure by assessment of left ventricular ejection fraction, Change in cardiac muscle function and structure by assessment of left ventricular end-systolic volume, Change in cardiac muscle function and structure by assessment of left ventricular end-diastolic volume, Change in elbow and distal level upper limb function, Change in Global Statistical Test (Total GST) combining upper limb function, cardiac muscle function, and patient reported measure of disease severity, Change in hand-to-mouth function in the context of functional eating, Change in hand-to-mouth function, Number of patients with total loss of hand-to-mouth function, Changes in patient-reported upper limb function, Changes in cardiac inflammation biomarker, creatine kinase MB isoenzyme [CK-MB]"
 NCT05126758,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Secondary Outcome Measure,"Change in cardiac muscle function and structure by assessment of left ventricular ejection fraction, Change in mid-level (elbow) upper limb function, Change in Global Statistical Test (Total GST) combining upper limb function, cardiac muscle function, and patient reported measure of disease severity, Change in the number of segments of myocardial scarring (Cohort B only), Change in cardiac muscle function and structure by assessment of left ventricular end-systolic volume, Change in cardiac muscle function and structure by assessment of left ventricular ejection fraction in subjects with documented cardiomyopathy, Change in a global statistical test (Cardiac GST) combining assessments of cardiac muscle function and structure, Change in percentage of myocardial scarring (Cohort B only), Change in hand-to-mouth function in the context of functional eating, Changes in cardiac inflammation biomarker, creatine kinase MB isoenzyme [CK-MB]","Change in cardiac muscle function and structure by assessment of left ventricular ejection fraction, Change in cardiac muscle function and structure by assessment of left ventricular end-systolic volume, Change in cardiac muscle function and structure by assessment of left ventricular end-diastolic volume, Change in elbow and distal level upper limb function, Change in Global Statistical Test (Total GST) combining upper limb function, cardiac muscle function, and patient reported measure of disease severity, Changes in cardiac inflammation biomarker, creatine kinase MB isoenzyme [CK-MB], Change in hand-to-mouth function in the context of functional eating, Change in hand-to-mouth function, Number of patients with total loss of hand-to-mouth function, Changes in patient-reported upper limb function"
 NCT05126758,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Enrollment Count,106.0,104.0
+NCT05126758,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-05,2025-12-17
 NCT05160415,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Brief Summary,"The ARCH study was an open-label, single-center, Phase 1b study of sevasemtem (EDG-5506) to assess the safety and pharmacokinetics (PK) of sevasemten in adults with Becker muscular dystrophy (BMD).
 Sevasemten is an investigational product intended to protect and improve function of dystrophic muscle fibers.","The ARCH study is an open-label, single-center, Phase 1b study of sevasemtem (EDG-5506) to assess the safety and pharmacokinetics (PK) of sevasemten in adults with Becker muscular dystrophy (BMD).
 Sevasemten is an investigational product intended to protect and improve function of dystrophic muscle fibers."
@@ -223,6 +238,9 @@ NCT05185622,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Has Results,Tr
 NCT05185622,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Primary Outcome Measure,"Number of Participants With Any Adverse Events as Assessed by Common Terminology Criteria for Adverse Events Version 4.03 (CTCAE v4.03), Number of Participants With Drug Related Adverse Events as Assessed by Common Terminology Criteria for Adverse Events Version 4.03 (CTCAE v4.03), Number of Participants With Severe Adverse Events as Assessed by Common Terminology Criteria for Adverse Events Version 4.03 (CTCAE v4.03), Number of Participants With Serious Adverse Events as Assessed by Common Terminology Criteria for Adverse Events Version 4.03 (CTCAE v4.03), Number of Participants With Adverse Events as Assessed by Common Terminology Criteria for Adverse Events Version 4.03 (CTCAE v4.03) Leading to Study Treatment Discontinuation, Change in Height (Absolute) From Baseline to Week 12, Change in Height (Percentile) From Baseline to Week 12, Change in Height (Z-score) From Baseline to Week 12, Change in Weight (Absolute) From Baseline to Week 12, Change in Weight (Percentile) From Baseline to Week 12, Change in Weight (Z-score) From Baseline to Week 12, Change in Body Mass Index (BMI) (Absolute) From Baseline to Week 12, Change in Body Mass Index (BMI) (Percentile) From Baseline to Week 12, Change in Body Mass Index (BMI) (Z-score) From Baseline to Week 12, Change in Diastolic Blood Pressure, Change in Systolic Blood Pressure, Number of Participants With Treatment Emergent Cushingoid Features, Number of Participants With Clinically Significant Treatment-emergent Abnormal Clinical Laboratory Test Result, Categorical Analysis of QTcF at Week 12, Number of Eyes With Cataract, Number of Eyes With Glaucoma","Change in Body Mass Index (BMI) from baseline to Week 12, Change in Body Mass Index (BMI) z-score from baseline to Week 12, Change in Weight from baseline to each of the scheduled on treatment and post-treatment assessment time points, Change in Height from baseline to Week 12, Change in Height z score from baseline to Week 12, Change in sitting blood pressure from baseline to each of the scheduled on-treatment and post-treatment assessment time points, Change in heart rate from baseline to each of the scheduled on-treatment and post-treatment assessment time points, Change in respiratory rate from baseline to each of the scheduled on-treatment and post-treatment assessment time points, Change in body temperature from baseline to each of the scheduled on-treatment and post-treatment assessment time points, Number of participants with Cushingoid features, Number of participants with abnormal blood laboratory test results, Number of participants with abnormal urine laboratory test results, Number of participants with abnormal ECGs, Number of participants with Glaucoma, Number of participants with Cataracts, Number of Participants with Adverse Events as Assessed by Common Terminology Criteria for Adverse Events version 4.03 (CTCAE v4.03)"
 NCT05185622,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Secondary Outcome Measure,"Pre-dose and Post-dose Plasma Concentration Measurements of Vamorolone at Day 1 and Week 2, Descriptive Statistics of PK Parameters - Tmax, Descriptive Statistics of PK Parameters - Cmax, Descriptive Statistics of PK Parameters in Subjects Aged 2 to 4 Years - AUC 0-6, Descriptive Statistics of PK Parameters in Subjects Aged 7 to 18 Years - AUC 0-inf","Area under the Curve infinity (AUCinf) following oral administration, Change in morning cortisol concentration from baseline to Week 12, Change in fasting serum concentration of glucose from baseline to Week 12, Change in fasting serum concentration of insulin from baseline to Week 12, Change in serum concentration of hemoglobin A1c (HbA1c) from baseline to Week 12"
 NCT05249361,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Overall Status,Unknown,Recruiting
+NCT05257473,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2026-08-01,2026-05-01
+NCT05257473,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Completion Date,2026-08-01,2026-05-01
+NCT05257473,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-10,2025-06-08
 NCT05280730,2025-09-01 07:20:22.089753,2025-08-01 07:26:41.414466,Overall Status,Completed,Recruiting
 NCT05280730,2025-09-01 07:20:22.089753,2025-08-01 07:26:41.414466,Enrollment Count,50.0,90.0
 NCT05291091,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Brief Summary,"A study of sevasemten (EDG-5506) in Becker muscular dystrophy (known as CANYON) and pivotal cohort (known as GRAND CANYON). The EDG-5506-201 CANYON study was expanded to include an additional 120 adult participants in a cohort called GRAND CANYON, that is a multicenter, randomized, double-blind, placebo-controlled study to evaluate the safety and efficacy of sevasemten in adults with Becker.
@@ -237,11 +255,13 @@ NCT05464446,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Lead Sponsor N
 NCT05524883,2025-08-01 07:26:41.414466,2025-07-01 07:21:37.005046,Secondary Id,"2023-510351-31-00, ITA 362546 (model PA-000798)",2023-510351-31-00
 NCT05540860,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Secondary Outcome Measure,"Incidence of laboratory test-related treatment emergent adverse events, Pharmacokinetics as measured by steady state plasma concentration, Change from Baseline in serum creatinine kinase, Change from Baseline in fast skeletal muscle troponin I","Incidence of abnormal clinical chemistry test results, Incidence of abnormal hematology test results, Incidence of abnormal coagulation test results, Incidence of abnormal urinalysis test results, Pharmacokinetics as measured by steady state plasma concentration, Change from Baseline in serum creatinine kinase, Change from Baseline in fast skeletal muscle troponin I"
 NCT05601986,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Unknown,Recruiting
+NCT05635266,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Overall Status,Unknown,Recruiting
 NCT05670730,2025-08-01 07:26:41.414466,2025-07-01 07:21:37.005046,Brief Title,Study of AOC 1044 in Healthy Adult Volunteers and Participants With Duchenne Muscular Dystrophy (DMD) Mutations Amenable to Exon 44 Skipping,Study of AOC 1044 in Healthy Adult Volunteers and Participants with Duchenne Muscular Dystrophy (DMD) Mutations Amenable to Exon 44 Skipping
 NCT05683379,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Brief Title,AFFINITY BEYOND: Anti-AAV8 Antibody Assessment Study of Males With DMD,AFFINITY BEYOND: Anti-AAV8 Antibody Assessment Study of Boys With DMD
 NCT05683379,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Maximum Age,25 Years,11 Years
 NCT05683379,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Maximum Age Months,300.0,132.0
 NCT05683379,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Std Age,"Child, Adult",Child
+NCT05683379,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-30,2025-11-25
 NCT05689164,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Enrollment Count,7.0,6.0
 NCT05689164,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Overall Status,Terminated,Active Not Recruiting
 NCT05693142,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Brief Summary,"RGX-202 is a gene therapy designed to deliver a transgene for a novel microdystrophin that includes functional elements of naturally-occurring dystrophin including the C-Terminal (CT) domain.
@@ -253,6 +273,8 @@ This is a multicenter, open-label dose evaluation clinical study to assess the s
 For additional information on how to participate (or be considered for the study), please follow this link: https://mytomorro.ws/affinity-ct-gov","RGX-202 is a gene therapy designed to deliver a transgene for a novel microdystrophin that includes functional elements of naturally-occurring dystrophin including the C-Terminal (CT) domain.
 This is a multicenter, open-label dose evaluation clinical study to assess the safety, tolerability, and clinical efficacy of a one-time intravenous (IV) dose of RGX-202 in participants with Duchenne.
 For additional information on how to participate (or be considered for the study), please follow this link: https://mytomorrows.com/trials/affinity-duchenne"
+NCT05693142,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2026-08-01,2026-02-01
+NCT05693142,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-30,2025-12-17
 NCT05712447,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Completed,Active Not Recruiting
 NCT05712447,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Collaborator Name,United States Department of Defense,Department of Defense Duchenne Muscular Dystrophy Research Program
 NCT05712447,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Enrollment Count,150.0,180.0
@@ -277,6 +299,8 @@ NCT06053814,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Maximum Age,15
 NCT06053814,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Maximum Age Months,180.0,168.0
 NCT06053814,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Completion Date,2028-03-01,2027-05-01
 NCT06053814,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-23,2025-09-10
+NCT06053814,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2028-03-01,2027-05-01
+NCT06053814,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-16,2026-04-23
 NCT06066580,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-02,2025-12-01
 NCT06066580,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-24,2026-02-02
 NCT06066580,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Primary Completion Date,2031-02-01,2029-08-01
@@ -313,6 +337,7 @@ NCT06138639,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Enrollment Cou
 NCT06138639,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-03,2025-12-22
 NCT06138639,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-03,2026-02-03
 NCT06138639,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-08,2026-03-03
+NCT06138639,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-22,2026-05-08
 NCT06147414,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Condition,"Invasive PreNatal Diagnosis in a Context of Family History of Single-gene Disorders, Including, Sickle Cell Disease, Cystic Fibrosis, Fragile X Syndrome, Proximal Spinal Muscular Atrophy, Myotonic Dystrophy, Muscular Dystrophy, Duchenne, Muscular Dystrophy, Becker, Neurofibromatosis-Noonan Syndrome, Huntington Disease, Hemophilia A, Hemophilia B, MODY2 Diabetes, X-Linked Hydrocephalus, Autosomal Recessive Polycystic Kidney Disease","Invasive PreNatal Diagnosis in a Context of Family History of Single-gene Disorders, Including, Sickle Cell Disease, Cystic Fibrosis, Fragile X Syndrome, Proximal Spinal Muscular Atrophy, Myotonic Dystrophy, Muscular Dystrophy, Duchenne, Muscular Dystrophy, Becker, Neurofibromatosis-Noonan Syndrome, Huntington Disease, Hemophilia a, Hemophilia B, MODY2 Diabetes, X-Linked Hydrocephalus, Autosomal Recessive Polycystic Kidney Disease"
 NCT06147414,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-23,2026-01-15
 NCT06241950,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Overall Status,Terminated,Enrolling By Invitation
@@ -331,6 +356,10 @@ NCT06280209,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Secondary Outc
 NCT06280209,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-03,2025-06-19
 NCT06280209,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-23,2026-02-03
 NCT06280209,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-08,2026-03-23
+NCT06280209,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Overall Status,Active Not Recruiting,Recruiting
+NCT06280209,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2027-04-14,2026-09-30
+NCT06280209,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Completion Date,2027-04-14,2026-09-30
+NCT06280209,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-25,2026-04-08
 NCT06290713,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-15,2025-07-09
 NCT06295718,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Unknown,Enrolling By Invitation
 NCT06295718,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Overall Status,Completed,Unknown
@@ -370,6 +399,7 @@ NCT06450639,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Brief Summary,
 NCT06450639,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Primary Outcome Measure,Group 2: Change From Baseline to Week 24 in Lumbar Spine (LS) Bone Mineral Density (BMD) Z-score Measured by Dual-energy X-ray Absorptiometry (DEXA),Group 2: Change From Baseline to Week 52 in Lumbar Spine (LS) Bone Mineral Density (BMD) Z-score Measured by Dual-energy X-ray Absorptiometry (DEXA)
 NCT06450639,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Secondary Outcome Measure,"All Participants: Change From Baseline to Week 24 in LS BMD Z-score Measured by DEXA, Group 2: Change From Baseline to Week 24 in Total Body Less Head (TBLH) BMD Z-score Measured by DEXA, Group 2: Change From Baseline to Week 24 in Total Hip BMD Z-score Measured by DEXA, Percentage of Participants With Treatment-emergent Adverse Events (TEAEs), Percentage of Participants With Serious Adverse Events (SAEs), Percentage of Participants With Adverse Events of Special Interest (AESIs), Observed Serum Concentration of Satralizumab at Specified Trough Timepoints up to Study End, Apparent Clearance (CL) of Satralizumab, Apparent Volume of Distribution (Vd) of Satralizumab, Area Under the Concentration-time Curve (AUC) of Satralizumab, Percentage of Participants With Anti-drug Antibodies (ADAs) to Satralizumab at Baseline and During the Study","All Participants: Change From Baseline to Weeks 24, 52, and 104 in LS BMD Z-score Measured by DEXA, Group 2: Change From Baseline to Weeks 24 and 104 in LS BMD Z-score Measured by DEXA, Group 2: Change From Baseline to Weeks 24, 52 and 104 in Total Body Less Head Bone Mineral Density (TBLH BMD) Z-score Measured by DEXA, Group 2: Change From Baseline to Weeks 24, 52 and 104 in Total Hip BMD Z-score Measured by DEXA, Group 2: Change From Baseline to Weeks 12, 24 and 52 in Circulating Bone Metabolism Biomarkers, All Participants: Change From Baseline to Weeks 12, 24 and 52 in Circulating Bone Metabolism Biomarkers, All Participants: Mean Number Per Participants of New Low-trauma Long-bone or Vertebral Fractures (VF), All Participants: Percentage of Participants With New Low-trauma Long-bone or VF, Percentage of Participants With Treatment-emergent Adverse Events (TEAEs), Percentage of Participants With Serious Adverse Events (SAEs), Percentage of Participants With Adverse Events of Special Interest (AESIs), Observed Serum Concentration of Satralizumab at Specified Trough Timepoints up to Week 104, Apparent Clearance of Satralizumab, Apparent Volume of Distribution of Satralizumab, Area Under the Concentration-time Curve of Satralizumab, Percentage of Participants With Anti-drug Antibodies (ADAs) at Baseline and During the Study"
 NCT06450639,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-15,2026-04-09
+NCT06485661,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Overall Status,Unknown,Recruiting
 NCT06491927,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Brief Summary,RGX-202-5101 is a long-term follow up study that evaluates the long-term safety and efficacy of RGX-202 in participants who have received RGX-202 (an investigative gene therapy designed to deliver a transgene for novel microdystrophin that includes functional elements of naturally-occurring dystrophin including the C-Terminal (CT) domain) in a separate parent study.,RGX-202-5101 is a long-term follow up study that evaluates the long term safety and efficacy of RGX-202 in participants who have received RGX-202 (a gene therapy designed to deliver a transgene for novel microdystrophin that includes functional elements of naturally-occurring dystrophin including the C-Terminal (CT) domain) in a separate parent study.
 NCT06491927,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Secondary Outcome Measure,"Time to Stand (TTSTAND), Time to Run/Walk (TTRW), Time to Climb (TTCLIMB), North Start Ambulatory Assessment (NSAA), Peabody Developmental Motor Scale, Third Edition (PDMS-3); Body Control Subtest, Peabody Developmental Motor Scale, Third Edition (PDMS-3); Body Transport Subtest, Stride velocity 95th centile (SV95C), Pharmacokinetics (PK), Vector Shedding",Efficacy measured by change in Functional Assessment
 NCT06491927,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Enrollment Count,66.0,19.0
@@ -480,6 +510,7 @@ NCT06817382,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Po
 NCT06817382,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-23,2026-02-27
 NCT06817382,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-29,2026-03-23
 NCT06817382,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-18,2026-04-29
+NCT06817382,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-11,2026-05-18
 NCT06833931,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Overall Status,Withdrawn,Suspended
 NCT06833931,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Enrollment Count,0.0,16.0
 NCT06839469,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-05,2025-02-21
@@ -575,6 +606,7 @@ NCT07160634,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Secondary Id,"
 NCT07160634,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-03,2025-12-12
 NCT07160634,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-03,2026-02-03
 NCT07160634,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-08,2026-03-03
+NCT07160634,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-02,2026-05-08
 NCT07172737,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Org Study Id,0451,451
 NCT07188012,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Brief Title,Safety and Dystrophin Expression of SPOT-03 in Duchenne Muscular Dystrophy (DMD) Patients,Safety and Dystrophin Expression of SPOT-mRNA03 in Duchenne Muscular Dystrophy (DMD) Patients
 NCT07188012,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Brief Summary,"The primary objective of this study is to evaluate the safety and tolerability of SPOT-03 administered by intravenous (IV) infusion to DMD patients. In addition, this study will preliminarily investigate the changes in dystrophin nucleic acid concentration, dystrophin protein expression and engraftment, anti-dystrophin antibodies and cytokine profiles, as well as fat tissue mas and lean tissue mass following SPOT-03 administrations.","The primary objective of this study is to evaluate the safety and and tolerability of SPOT-mRNA03 administered by intravenous (IV) infusion to DMD patients. In addition, this study will preliminarily investigate the concentration changes in dystrophin mRNA concentration, dystrophin protein expression and engraftment, as well as cytokine profiles and immunogenicity."
@@ -593,6 +625,9 @@ NCT07250737,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Po
 NCT07250737,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-31,2026-02-24
 NCT07250737,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-27,2026-03-31
 NCT07250737,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-26,2026-04-27
+NCT07250737,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Minimum Age,2 Years,6 Years
+NCT07250737,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Minimum Age Months,24.0,72.0
+NCT07250737,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-29,2026-05-26
 NCT07254988,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Overall Status,Terminated,Recruiting
 NCT07254988,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Enrollment Count,3.0,8.0
 NCT07254988,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Primary Completion Date,2025-12-01,2026-12-01
@@ -604,6 +639,7 @@ NCT07287189,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Po
 NCT07287189,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-17,2026-02-17
 NCT07287189,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-15,2026-03-17
 NCT07287189,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-27,2026-04-15
+NCT07287189,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-16,2026-05-27
 NCT07317063,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Overall Status,Completed,Recruiting
 NCT07317063,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-13,2026-01-05
 NCT07332013,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Start Date,2026-03-01,2026-01-01
@@ -617,10 +653,19 @@ NCT07347548,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Completion Dat
 NCT07347548,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-13,2026-01-16
 NCT07347548,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Overall Status,Active Not Recruiting,Recruiting
 NCT07347548,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-09,2026-02-13
+NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Overall Status,Recruiting,Not Yet Recruiting
+NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Start Date,2026-03-03,2026-01-01
+NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2029-03-03,2029-01-01
+NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Completion Date,2029-03-03,2029-01-01
+NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-24,2026-01-30
+NCT07423026,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Overall Status,Recruiting,Not Yet Recruiting
+NCT07423026,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Start Date,2026-06-24,2026-02-24
+NCT07423026,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-10,2026-02-20
 NCT07429240,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-13,2026-02-24
 NCT07429240,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Overall Status,Recruiting,Not Yet Recruiting
 NCT07429240,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Start Date,2026-04-24,2026-03-01
 NCT07429240,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-30,2026-03-13
+NCT07429240,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-23,2026-04-30
 NCT07467187,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Overall Status,Recruiting,Not Yet Recruiting
 NCT07467187,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Start Date,2026-04-13,2026-04-01
 NCT07467187,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-20,2026-03-27
