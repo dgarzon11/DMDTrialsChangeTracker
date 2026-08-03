@@ -59,6 +59,9 @@ NCT07642635,2026-07-01 10:42:02.701995,,New  Study  Added,,
 NCT07664124,2026-07-01 10:42:02.701995,,New  Study  Added,,
 NCT07673809,2026-07-01 10:42:02.701995,,New  Study  Added,,
 NCT07674758,2026-07-01 10:42:02.701995,,New  Study  Added,,
+NCT07682129,2026-08-01 09:05:50.863730,,New  Study  Added,,
+NCT07704099,2026-08-01 09:05:50.863730,,New  Study  Added,,
+NCT07740057,2026-08-01 09:05:50.863730,,New  Study  Added,,
 NCT00005574,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Org Study Id,000083,83
 NCT01247207,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Completed,Enrolling By Invitation
 NCT01247207,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Primary Completion Date,2026-02-10,2025-04-30
@@ -148,14 +151,20 @@ NCT03368742,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Po
 NCT03368742,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-03,2026-02-03
 NCT03368742,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-08,2026-03-03
 NCT03368742,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-02,2026-05-08
+NCT03368742,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-07,2026-06-02
 NCT03373968,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Overall Status,Recruiting,Active Not Recruiting
 NCT03508947,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Lead Sponsor Name,"Wave Life Sciences USA, Inc.",Wave Life Sciences Ltd.
 NCT03655223,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Minimum Age Months,0.0333333333333333,0.033333333
 NCT03655223,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Maximum Age Months,1.0333333333333334,1.033333333
+NCT03655223,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Overall Status,Active Not Recruiting,Enrolling By Invitation
+NCT03655223,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Primary Completion Date,2026-11-30,2025-11-30
+NCT03655223,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Completion Date,2026-12-31,2025-12-31
+NCT03655223,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-01,2025-04-04
 NCT03680365,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Collaborator Name,"Engage Health Inc., Hyman, Phelps, & McNamara, P.C., Ryans Quest Inc., Michaels Cause Inc., Nationwide Children's Hospital, Solid Biosciences Inc., Santhera Pharmaceuticals, Italfarmaco, Catabasis Pharmaceuticals, Wave Life Sciences USA, Inc., Sarepta Therapeutics, Inc., Hoffmann-La Roche, Pfizer, Capricor Inc., NS Pharma, Inc.","Engage Health Inc., Hyman, Phelps, & McNamara, P.C., Ryans Quest Inc., Michaels Cause Inc., Nationwide Children's Hospital, Solid Biosciences Inc., Santhera Pharmaceuticals, Italfarmaco, Catabasis Pharmaceuticals, Wave Life Sciences Ltd., Sarepta Therapeutics, Inc., Hoffmann-La Roche, Pfizer, Capricor Inc., NS Pharma, Inc."
 NCT03689660,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Overall Status,Completed,Unknown
 NCT03689660,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Completion Date,2023-05-01,2023-10-01
 NCT03689660,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-23,2022-06-22
+NCT03836300,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-13,2025-07-31
 NCT03863119,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Overall Status,Available,Approved For Marketing
 NCT03863119,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Brief Summary,"The intent of this protocol is to provide continued access to vamorolone for subjects in the United States and Canada who have completed the VBP15-LTE, VBP15- 004, or VBP15-006 protocols (and are thereby ineligible to enroll in another trial of vamorolone therapy), during the time a new drug application for vamorolone is under preparation and review.","The intent of this protocol is to provide continued access to vamorolone for subjects in the United States who Have Completed the VBP15-LTE, VBP15- 004, or VBP15-006 protocols (and are thereby ineligible to enroll in another trial of vamorolone therapy), during the time a new drug application for vamorolone is under preparation and review."
 NCT03882827,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Overall Status,Recruiting,Unknown
@@ -181,6 +190,7 @@ NCT04281485,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Primary Outcom
 NCT04281485,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Secondary Outcome Measure,"Change From Baseline in Percent Normal Dystrophin Expression Level in Muscle Biopsies by Liquid Chromatography Mass Spectrometry (LC-MS) Based on LLQV Peptide at Week 52, Change From Baseline in Percent of Muscle Fibers Expressing Mini-Dystrophin in Muscle Biopsies by Immunofluorescence at Week 52, Change From Baseline in Serum Creatine Kinase (CK) Concentration at Week 52, Least Square Mean of Proportion of Skills Gained Based on the Individual Items of the NSAA at Week 52, Least Square Mean of Proportion of Skills Either Improved or Maintained Based on the Individual Items of the NSAA at Week 52, Change From Baseline in 10 Meter Run/Walk Velocity at Week 52, Change From Baseline in Rise From Floor Velocity at Week 52, Change From Baseline in Modified Pediatric Outcome Data Collection Instrument (PODCI)- Transfer and Basic Mobility Core Scale at Week 52, Change From Baseline in Modified PODCI- Sports and Physical Functioning Core Scale at Week 52","Change from Baseline in mini-dystrophin expression level in muscle, Change from Baseline in distribution of mini-dystrophin expression in the muscle, Change from Baseline in serum creatine kinase (CK), Number of skills gained based on the individual items of the NSAA., Number of skills improved or maintained based on the individual items of the NSAA, Change from Baseline in the 10-meter run/walk test velocity, Change from Baseline in the rise from floor velocity, Change from Baseline in the Modified Pediatric Outcomes Data Collection Instrument (PODCI): Transfer and Basic Mobility Core Scale, Change from Baseline in the Modified Pediatric Outcomes Data Collection Instrucment (PODCI): Sports and Physical Functioning Core Scale"
 NCT04281485,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Enrollment Count,114.0,122.0
 NCT04281485,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-02,2026-01-02
+NCT04281485,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-22,2026-03-02
 NCT04322357,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Completed,Active Not Recruiting
 NCT04322357,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Has Results,True,False
 NCT04322357,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Intervention Name,"Prednisone, Exercise Training on standard steroid regimen, Exercise training on twice-weekly steroids","Prednisone, In-home Exercise Training, Prednisone plus exercise"
@@ -217,8 +227,14 @@ NCT04906460,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Minimum Age Mo
 NCT04906460,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Enrollment Count,26.0,11.0
 NCT04906460,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Overall Status,Recruiting,Active Not Recruiting
 NCT04906460,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Lead Sponsor Name,"Wave Life Sciences USA, Inc.",Wave Life Sciences Ltd.
+NCT04972604,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Overall Status,Completed,Recruiting
+NCT04972604,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Enrollment Count,240.0,5000.0
+NCT04972604,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Primary Completion Date,2025-12-12,2031-07-09
+NCT04972604,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Completion Date,2025-12-12,2031-07-09
+NCT04972604,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-24,2024-08-20
 NCT05016908,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Overall Status,Unknown,Recruiting
 NCT05016908,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Overall Status,Recruiting,Unknown
+NCT05066633,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Overall Status,Unknown,Recruiting
 NCT05096221,2025-08-01 07:26:41.414466,2025-07-01 07:21:37.005046,Secondary Outcome Measure,"Part 1: Quantity of Delandistrogene Moxeparvovec Dystrophin Protein Expression at Week 12 as Measured by Western Blot Adjusted by Muscle Content, Part 1: Change From Baseline in Time to Rise From the Floor at Week 52, Part 1: Change From Baseline in Time to Complete 10 Meter Walk/Run (10MWR) at Week 52, Part 1: Change From Baseline in Time to Complete 100 Meter Walk/Run (100MWR) at Week 52, Part 1: Change From Baseline in the Timed Stair Ascend 4 Steps Test at Week 52, Part 1: Change From Baseline in Stride Velocity 95th Centile (SV95C) at Week 52, Part 1: Change From Baseline in Patient-Reported Outcomes Measurement Information System (PROMIS) Score in Mobility to Week 52, Part 1: Change From Baseline in PROMIS Score in Upper Extremity Function to Week 52, Part 1: Number of Skills Gained or Improved at Week 52 as Measured by the NSAA, Parts 1 and 2: Number of Participants With Treatment Emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs), Parts 1 and 2: Number of Participants With Adverse Events of Special Interest (AESI)","Part 1: Quantity of Delandistrogene Moxeparvovec Dystrophin Protein Expression at Week 12 as Measured by Western Blot Adjusted by Muscle Content, Part 1: Change From Baseline in Time to Rise From the Floor at Week 52, Part 1: Change From Baseline in Time to Complete 10 Meter Walk/Run (10MWR) at Week 52, Part 1: Change From Baseline in Time to Complete 100 Meter Walk/Run (100MWR) at Week 52, Part 1: Change From Baseline in the Timed Stair Ascend 4 Steps Test at Week 52, Part 1: Change From Baseline in Stride Velocity 95th Centile (SV95C) at Week 52, Part 1: Change From Baseline in Patient-Reported Outcomes Measurement Information System (PROMIS) Score in Mobility to Week 52, Part 1: Change From Baseline in PROMIS Score in Upper Extremity Function to Week 52, Part 1: Number of Skills Gained or Improved at Week 52 as Measured by the NSAA, Part 1: Number of Participants With Treatment Emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs), Part 1: Number of Participants With Adverse Events of Special Interest (AESI)"
 NCT05102916,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Collaborator Name,"University Children's Hospital Basel, Insel Gruppe AG, University Hospital Bern, University of Lausanne Hospitals, Ente Ospedaliero Cantonale, Bellinzona, University Children's Hospital, Zurich, University Hospital, Zürich, SwissPedNet - Swiss Research Network of Clinical Pediatric Hubs","University Children's Hospital Basel, Insel Gruppe AG, University Hospital Bern, University of Lausanne Hospitals, Ente Ospedaliero Cantonale, Bellinzona, University Children's Hospital, Zurich"
 NCT05102916,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Collaborator Name,"University Children's Hospital Basel, Insel Gruppe AG, University Hospital Bern, University of Lausanne Hospitals, Ente Ospedaliero Cantonale, Bellinzona, University Children's Hospital, Zurich, University Hospital, Zürich, SwissPedNet","University Children's Hospital Basel, Insel Gruppe AG, University Hospital Bern, University of Lausanne Hospitals, Ente Ospedaliero Cantonale, Bellinzona, University Children's Hospital, Zurich, University Hospital, Zürich, SwissPedNet - Swiss Research Network of Clinical Pediatric Hubs"
@@ -250,6 +266,7 @@ NCT05291091,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Enrollment Cou
 NCT05291091,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-02,2025-12-01
 NCT05291091,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-24,2026-02-02
 NCT05291091,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-20,2026-03-24
+NCT05291091,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-31,2026-05-20
 NCT05429372,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Overall Status,Terminated,Active Not Recruiting
 NCT05464446,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Lead Sponsor Name,Lokman Hekim University,Lokman Hekim Üniversitesi
 NCT05524883,2025-08-01 07:26:41.414466,2025-07-01 07:21:37.005046,Secondary Id,"2023-510351-31-00, ITA 362546 (model PA-000798)",2023-510351-31-00
@@ -262,6 +279,9 @@ NCT05683379,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Maximum Age,25
 NCT05683379,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Maximum Age Months,300.0,132.0
 NCT05683379,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Std Age,"Child, Adult",Child
 NCT05683379,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-30,2025-11-25
+NCT05683379,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Overall Status,Active Not Recruiting,Recruiting
+NCT05683379,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Primary Completion Date,2026-06-30,2026-09-01
+NCT05683379,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-07,2026-06-30
 NCT05689164,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Enrollment Count,7.0,6.0
 NCT05689164,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Overall Status,Terminated,Active Not Recruiting
 NCT05693142,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Brief Summary,"RGX-202 is a gene therapy designed to deliver a transgene for a novel microdystrophin that includes functional elements of naturally-occurring dystrophin including the C-Terminal (CT) domain.
@@ -275,6 +295,14 @@ This is a multicenter, open-label dose evaluation clinical study to assess the s
 For additional information on how to participate (or be considered for the study), please follow this link: https://mytomorrows.com/trials/affinity-duchenne"
 NCT05693142,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2026-08-01,2026-02-01
 NCT05693142,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-30,2025-12-17
+NCT05693142,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Overall Status,Active Not Recruiting,Recruiting
+NCT05693142,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Brief Summary,"RGX-202 is a gene therapy designed to deliver a transgene for a novel microdystrophin that includes functional elements of naturally-occurring dystrophin including the C-Terminal (CT) domain.
+This is a multicenter, open-label dose evaluation clinical study to assess the safety, tolerability, and clinical efficacy of a one-time intravenous (IV) dose of RGX-202 in participants with Duchenne.","RGX-202 is a gene therapy designed to deliver a transgene for a novel microdystrophin that includes functional elements of naturally-occurring dystrophin including the C-Terminal (CT) domain.
+This is a multicenter, open-label dose evaluation clinical study to assess the safety, tolerability, and clinical efficacy of a one-time intravenous (IV) dose of RGX-202 in participants with Duchenne.
+For additional information on how to participate (or be considered for the study), please follow this link: https://mytomorro.ws/affinity-ct-gov"
+NCT05693142,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Primary Completion Date,2026-09-01,2026-08-01
+NCT05693142,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Completion Date,2028-06-01,2028-08-01
+NCT05693142,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-21,2026-06-30
 NCT05712447,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Completed,Active Not Recruiting
 NCT05712447,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Collaborator Name,United States Department of Defense,Department of Defense Duchenne Muscular Dystrophy Research Program
 NCT05712447,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Enrollment Count,150.0,180.0
@@ -285,6 +313,7 @@ NCT05715957,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Overall Status
 NCT05753462,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Overall Status,Unknown,Recruiting
 NCT05881408,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Overall Status,Active Not Recruiting,Recruiting
 NCT05881408,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-22,2025-06-22
+NCT05933057,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-24,2025-05-11
 NCT05967351,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Brief Summary,The purpose of this study is to provide a single clinical study with a uniform approach to monitoring long-term safety and efficacy in participants who received delandistrogene moxeparvovec in a previous clinical study. No study drug will be administered as part of this study.,The purpose of this study is to provide a single clinical study with a uniform approach to monitoring long-term safety and efficacy in participants who received delandistrogene moxeparvovec in a previous clinical study. No study drug will be administered as part of this study. Pre-infusion baseline will be defined as the timepoint just prior to infusion of delandistrogene moxeparvovec from a previous clinical study. Each participant will be followed for a minimum of 5 years post-infusion of delandistrogene moxeparvovec from a previous clinical study. The duration of participation in this study is dependent on the length of follow-up the participant completed post-infusion of delandistrogene moxeparvovec from a previous clinical study.
 NCT05967351,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Secondary Outcome Measure,"Change in the North Star Ambulatory Assessment (NSAA) Total Score From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation, Change in Time to Rise From Floor From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation, Change in the Time of 10-meter Walk/Run (10MWR) From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation, Change in Performance of Upper Limb (PUL) (Version 2.0) Total Scores From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation, Change in PUL (Version 2.0) Domain Specific Scores From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation, Change in Forced Vital Capacity Percent (FVC%) Predicted From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation, Change in Peak Expiratory Flow Percent (PEF%) Predicted From Pre-infusion Baseline to the End of the Study Participation of Delandistrogene Moxeparvovec, Change in Cardiac Magnetic Resonance Imaging (MRI) Findings From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation, Change in Musculoskeletal MRI Findings From Pre-infusion Baseline of Delandistrogene Moxeparvovec to the End of the Study Participation","Change in the North Star Ambulatory Assessment (NSAA) Total Score From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in Time to Rise From Floor From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in the Time of 10-meter Walk/Run (10MWR) From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in Performance of Upper Limb (PUL) (Version 2.0) Total Scores From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in PUL (Version 2.0) Domain Specific Scores From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in Forced Vital Capacity Percent (FVC%) Predicted From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in Peak Expiratory Flow Percent (PEF%) Predicted From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in Cardiac Magnetic Resonance Imaging (MRI) Findings From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec, Change in Musculoskeletal MRI Findings From Pre-infusion Baseline to 5 Years Post-infusion of Delandistrogene Moxeparvovec"
 NCT05967351,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Primary Completion Date,2033-10-31,2030-11-30
@@ -306,6 +335,7 @@ NCT06066580,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Po
 NCT06066580,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Primary Completion Date,2031-02-01,2029-08-01
 NCT06066580,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Completion Date,2031-02-01,2029-08-01
 NCT06066580,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-06,2026-03-24
+NCT06066580,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-31,2026-05-06
 NCT06079736,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Overall Status,Terminated,Active Not Recruiting
 NCT06100887,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Secondary Outcome Measure,"Incidence of laboratory test-related treatment emergent adverse events, Pharmacokinetics as measured by steady state plasma concentration, Change from Baseline in serum creatine kinase, Change from Baseline in fast skeletal muscle troponin I","Incidence of abnormal clinical chemistry test results, Incidence of abnormal hematology test results, Incidence of abnormal coagulation test results, Incidence of abnormal urinalysis test results, Pharmacokinetics as measured by steady state plasma concentration, Change from Baseline in serum creatine kinase, Change from Baseline in fast skeletal muscle troponin I"
 NCT06103006,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Lead Sponsor Name,Lokman Hekim University,Lokman Hekim Üniversitesi
@@ -338,10 +368,13 @@ NCT06138639,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Po
 NCT06138639,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-03,2026-02-03
 NCT06138639,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-08,2026-03-03
 NCT06138639,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-22,2026-05-08
+NCT06138639,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-08,2026-06-22
 NCT06147414,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Condition,"Invasive PreNatal Diagnosis in a Context of Family History of Single-gene Disorders, Including, Sickle Cell Disease, Cystic Fibrosis, Fragile X Syndrome, Proximal Spinal Muscular Atrophy, Myotonic Dystrophy, Muscular Dystrophy, Duchenne, Muscular Dystrophy, Becker, Neurofibromatosis-Noonan Syndrome, Huntington Disease, Hemophilia A, Hemophilia B, MODY2 Diabetes, X-Linked Hydrocephalus, Autosomal Recessive Polycystic Kidney Disease","Invasive PreNatal Diagnosis in a Context of Family History of Single-gene Disorders, Including, Sickle Cell Disease, Cystic Fibrosis, Fragile X Syndrome, Proximal Spinal Muscular Atrophy, Myotonic Dystrophy, Muscular Dystrophy, Duchenne, Muscular Dystrophy, Becker, Neurofibromatosis-Noonan Syndrome, Huntington Disease, Hemophilia a, Hemophilia B, MODY2 Diabetes, X-Linked Hydrocephalus, Autosomal Recessive Polycystic Kidney Disease"
 NCT06147414,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-23,2026-01-15
 NCT06241950,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Overall Status,Terminated,Enrolling By Invitation
 NCT06241950,2025-12-01 07:23:31.834092,2025-11-01 07:17:18.276233,Enrollment Count,5.0,6.0
+NCT06244082,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Completion Date,2027-04-30,2027-07-31
+NCT06244082,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-30,2025-05-14
 NCT06270719,2025-09-01 07:20:22.089753,2025-08-01 07:26:41.414466,Overall Status,Enrolling By Invitation,Recruiting
 NCT06270719,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Brief Title,An Observational Study Comparing Delandistrogene Moxeparvovec (ELEVIDYS) With Standard of Care in Participants With Duchenne Muscular Dystrophy,An Observational Study Comparing Delandistrogene Moxeparvovec With Standard of Care in Participants With Duchenne Muscular Dystrophy
 NCT06270719,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Brief Summary,"This is a multicenter, prospective, observational Phase 4 study including a post marketing safety requirement, designed to collect both medical history data and prospective data on Duchenne muscular dystrophy (DMD) treatment outcomes in participants receiving delandistrogene moxeparvovec (ELEVIDYS) as part of clinical care, compared to participants with DMD receiving or prescribed to start chronic glucocorticoid treatment at the time of study enrollment in routine clinical practice.","This is a multicenter, prospective, observational Phase 4 study in the United States. The study is designed to collect both medical history and prospective data on Duchenne muscular dystrophy (DMD) treatment outcomes in participants receiving delandistrogene moxeparvovec as part of clinical care, compared to participants with DMD receiving or prescribed to start chronic glucocorticoid treatment at baseline in routine clinical practice."
@@ -413,6 +446,12 @@ NCT06564974,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Primary Comple
 NCT06564974,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Completion Date,2032-02-01,2030-11-01
 NCT06564974,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-27,2025-08-05
 NCT06564974,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Collaborator Name,"ICON plc, Veeva Systems, Children's Hospital of Eastern Ontario, Medpace, Inc.","ICON Medical Imaging, ICON plc, Veeva Systems, Children's Hospital of Eastern Ontario, Medpace, Inc."
+NCT06564974,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-20,2026-02-27
+NCT06579352,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Brief Title,Phase 2 Expanded Access Study of UC-MSC in DMD Patients,Expanded Access Study of UC-MSC in DMD Patients
+NCT06579352,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Overall Status,Active Not Recruiting,Available
+NCT06579352,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Study Type,Interventional,Expanded Access
+NCT06579352,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Org Study Id,IND 16561 - Serial 0021,IND 16561 - Serial 0017
+NCT06579352,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-24,2024-08-30
 NCT06594094,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Overall Status,Completed,Recruiting
 NCT06594094,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Phase,Early Phase1,Na
 NCT06594094,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Enrollment Count,4.0,6.0
@@ -511,6 +550,7 @@ NCT06817382,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Po
 NCT06817382,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-29,2026-03-23
 NCT06817382,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-18,2026-04-29
 NCT06817382,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-11,2026-05-18
+NCT06817382,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-28,2026-06-11
 NCT06833931,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Overall Status,Withdrawn,Suspended
 NCT06833931,2025-07-01 07:21:37.005046,2025-06-01 07:18:56.003730,Enrollment Count,0.0,16.0
 NCT06839469,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-05,2025-02-21
@@ -600,6 +640,7 @@ NCT07101185,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Collaborator N
 NCT07127978,2025-10-01 07:19:32.349441,2025-09-01 07:20:22.089753,Condition,Duchene Muscular Dystrophy,"Duchene Muscular Dystrophy, Duchene&Amp;Amp;#39;s Muscular Dystrophy"
 NCT07127978,2025-11-01 07:17:18.276233,2025-10-01 07:19:32.349441,Overall Status,Recruiting,Not Yet Recruiting
 NCT07127978,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-15,2025-10-30
+NCT07127978,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-02,2026-04-15
 NCT07160634,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Overall Status,Recruiting,Not Yet Recruiting
 NCT07160634,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Secondary Outcome Measure,"Change From Baseline in Stride Velocity 95th Centile (SV95C) (m/s) at Day 540, Change From Baseline in 4-Stair Climb (4SC) Velocity (tasks/s) at Day 540, Change From Baseline in 10-meter Walk/Run (10MWR) Velocity (m/s) at Day 540, Change From Baseline in North Star Ambulatory Assessment (NSAA) total score at Day 540, Cumulative Loss of Function in NSAA Items at Day 540, Change From Baseline in Microdystrophin Protein Levels by western blot (% of normal dystrophin) at Day 90, Change From Baseline in Microdystrophin Tissue Distribution by Immunofluorescence (% positive fibers) at Day 90, Change from baseline in Percent Predicted Forced Vital Capacity (FVC) at Day 540, Change from baseline in Percent Predicted Peak Expiratory Flow (PEF) at Day 540, Change from baseline in Percent Predicted Forced Expiratory Volume in 1 second (FEV1) at Day 540, Change from baseline in the Pediatric Outcomes Data Collection Instrument (PODCI) Global score at Day 540, Number of Participants with Treatment Emergent Adverse Events (TEAEs), Serious Adverse Events (SAEs), Adverse Events of special interest (AESIs), and clinically significant changes in Electrocardiogram (ECG) and Echocardiography (ECHO)","Change From Baseline in Stride Velocity 95th Centile (SV95C) (m/s) at Day 540, Change From Baseline in 10-meter Walk/Run Velocity (m/s) at Day 540, Change From Baseline in 4-Stair Climb Velocity (tasks/s) at Day 540, Change From Baseline in North Star Ambulatory Assessment (NSAA) total score at Day 540, Cumulative Loss of Function in NSAA Items at Day 540, Change From Baseline in Microdystrophin Protein Levels by western blot (% of normal dystrophin) at Day 90, Change From Baseline in Microdystrophin Tissue Distribution by Immunofluorescence (% positive fibers) at Day 90, Change from baseline in Percent Predicted Forced Vital Capacity (FVC) at Day 540, Change from baseline in Percent Predicted Peak Expiratory Flow (PEF) at Day 540, Change from baseline in Percent Predicted Forced Expiratory Volume in 1 second (FEV1) at Day 540, Change from baseline in the Pediatric Outcomes Data Collection Instrument (PODCI) Global score at Day 540, Number of Participants with Treatment Emergent Adverse Events (TEAEs), Serious Adverse Events (SAEs) and Adverse Events of special interest (AESIs)"
 NCT07160634,2026-01-01 07:23:50.780214,2025-12-01 07:23:31.834092,Secondary Id,"2025-522949-22, 1013075",2025-522949-22
@@ -607,7 +648,12 @@ NCT07160634,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Po
 NCT07160634,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Post Date,2026-03-03,2026-02-03
 NCT07160634,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-08,2026-03-03
 NCT07160634,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-02,2026-05-08
+NCT07160634,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-16,2026-06-02
 NCT07172737,2026-02-01 07:37:25.453478,2026-01-01 07:23:50.780214,Org Study Id,0451,451
+NCT07172971,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Overall Status,Recruiting,Not Yet Recruiting
+NCT07172971,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Lead Sponsor Name,Vanderbilt University Medical Center,Larry W. Markham
+NCT07172971,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Start Date,2026-07-01,2026-02-01
+NCT07172971,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-21,2025-12-24
 NCT07188012,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Brief Title,Safety and Dystrophin Expression of SPOT-03 in Duchenne Muscular Dystrophy (DMD) Patients,Safety and Dystrophin Expression of SPOT-mRNA03 in Duchenne Muscular Dystrophy (DMD) Patients
 NCT07188012,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Brief Summary,"The primary objective of this study is to evaluate the safety and tolerability of SPOT-03 administered by intravenous (IV) infusion to DMD patients. In addition, this study will preliminarily investigate the changes in dystrophin nucleic acid concentration, dystrophin protein expression and engraftment, anti-dystrophin antibodies and cytokine profiles, as well as fat tissue mas and lean tissue mass following SPOT-03 administrations.","The primary objective of this study is to evaluate the safety and and tolerability of SPOT-mRNA03 administered by intravenous (IV) infusion to DMD patients. In addition, this study will preliminarily investigate the concentration changes in dystrophin mRNA concentration, dystrophin protein expression and engraftment, as well as cytokine profiles and immunogenicity."
 NCT07188012,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Intervention Name,SPOT-03,mRNA
@@ -628,6 +674,7 @@ NCT07250737,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Po
 NCT07250737,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Minimum Age,2 Years,6 Years
 NCT07250737,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Minimum Age Months,24.0,72.0
 NCT07250737,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-29,2026-05-26
+NCT07250737,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-30,2026-06-29
 NCT07254988,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Overall Status,Terminated,Recruiting
 NCT07254988,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Enrollment Count,3.0,8.0
 NCT07254988,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Primary Completion Date,2025-12-01,2026-12-01
@@ -640,6 +687,7 @@ NCT07287189,2026-04-01 08:15:57.024034,2026-03-01 07:33:13.464479,Last Update Po
 NCT07287189,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-15,2026-03-17
 NCT07287189,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-27,2026-04-15
 NCT07287189,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-16,2026-05-27
+NCT07287189,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-31,2026-06-16
 NCT07317063,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Overall Status,Completed,Recruiting
 NCT07317063,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Last Update Post Date,2026-02-13,2026-01-05
 NCT07332013,2026-03-01 07:33:13.464479,2026-02-01 07:37:25.453478,Start Date,2026-03-01,2026-01-01
@@ -658,6 +706,7 @@ NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Start Date,202
 NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Primary Completion Date,2029-03-03,2029-01-01
 NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Completion Date,2029-03-03,2029-01-01
 NCT07378553,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-24,2026-01-30
+NCT07415837,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Collaborator Name,Université d'Auvergne,"iGreD, Université Clermont Auvergne"
 NCT07423026,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Overall Status,Recruiting,Not Yet Recruiting
 NCT07423026,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Start Date,2026-06-24,2026-02-24
 NCT07423026,2026-07-01 10:42:02.701995,2026-06-01 12:36:46.620061,Last Update Post Date,2026-06-10,2026-02-20
@@ -671,3 +720,7 @@ NCT07467187,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Start Date,202
 NCT07467187,2026-05-01 09:01:11.670236,2026-04-01 08:15:57.024034,Last Update Post Date,2026-04-20,2026-03-27
 NCT07542314,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Start Date,2026-07-31,2026-04-30
 NCT07542314,2026-06-01 12:36:46.620061,2026-05-01 09:01:11.670236,Last Update Post Date,2026-05-26,2026-04-21
+NCT07573631,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Start Date,2026-04-20,2026-04-01
+NCT07573631,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-24,2026-05-14
+NCT07587242,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-13,2026-05-14
+NCT07674758,2026-08-01 09:05:50.863730,2026-07-01 10:42:02.701995,Last Update Post Date,2026-07-28,2026-06-30
